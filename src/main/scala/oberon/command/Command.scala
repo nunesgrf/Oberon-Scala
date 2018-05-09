@@ -46,3 +46,16 @@ class Print(val exp: Expression) extends Command {
   }
 
 }
+
+class Conditional(val cond: Expression, val ifCommand: Command, val elseCommand: Command = new BlockCommand(List())) extends Command {
+
+  override def run(): Unit = {
+
+    val value = cond.eval.asInstanceOf[BoolValue]
+
+    value match {
+      case BoolValue(true) => ifCommand.run()
+      case BoolValue(false) => elseCommand.run()
+    }
+  }
+}
