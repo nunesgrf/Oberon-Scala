@@ -8,7 +8,6 @@ import org.scalatest.BeforeAndAfter
 
 import oberon.Environment._
 import oberon.expression.IntValue
-import oberon.expression.EqExpression
 import oberon.expression._
 
 class TestConditional extends FlatSpec with Matchers with GivenWhenThen with BeforeAndAfter{
@@ -20,7 +19,7 @@ class TestConditional extends FlatSpec with Matchers with GivenWhenThen with Bef
     val ifCms: List[Command] = List(new Assignment("x", IntValue(10)))
     val elseCms: List[Command] = List(new Assignment("x", IntValue(20)))
 
-    val cond = new EqExpression(IntValue(1),IntValue(1))
+    val cond = new IntExpression(IntValue(1),IntValue(1)).eqq
     val ifCommand = new BlockCommand(ifCms)
     val elseCommand = new BlockCommand(elseCms)
 

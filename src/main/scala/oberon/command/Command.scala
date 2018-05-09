@@ -61,16 +61,25 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
 
   override def run(): Unit = {
 
-    val runLoop = new EqExpression(i,range)
+    val runLoop = new IntExpression(i,range).eqq
 
     runLoop.eval match {
       case BoolValue(false) => {
         command.run()
-        new For(new AddExpression(i,IntValue(1)), range, command).run()
+        new For(new IntExpression(i,IntValue(1)).add, range, command).run()
       }
       case _ =>
     }
   }
 }
 
+class DecVar(val datatype: String, val name: String) extends Command {
+  def run(): Unit = {
 
+    datatype match {
+      case "int"  => new Assignment(name, IntValue(0))
+      case "bool" => new Assignment(name, BoolValue(false))
+      case _      =>
+    }
+  }
+}
