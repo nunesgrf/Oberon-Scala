@@ -6,7 +6,7 @@ class IntExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,
   private val v2 = rhs.eval().asInstanceOf[IntValue]
 
   override def eval(): Value = BoolValue(true)
-  def mod: Value = IntValue(v1.value%v1.value)
+  def mod: Value = IntValue(v1.value%v2.value)
   def div: Value = IntValue(v1.value/v2.value)
   def mul: Value = IntValue(v1.value*v2.value)
   def sub: Value = IntValue(v1.value-v2.value)
