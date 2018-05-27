@@ -12,6 +12,6 @@ class TestDecVar extends FlatSpec with Matchers with GivenWhenThen with BeforeAn
   it should "Create an IntValue(0) with name: variable" in {
     val test = new DecVar("int","variable")
     test.run()
-    new VarRef("variable").eval() should be (IntValue(0))
+    new VarRef("variable").eval() should be (Uninitialized())
   }
 }

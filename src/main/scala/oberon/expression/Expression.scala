@@ -9,5 +9,6 @@ trait Value extends Expression {
 }
 
 case class Undefined() extends Value
+case class Uninitialized() extends Value
 case class IntValue(value: Integer) extends Value
 case class BoolValue(value: Boolean) extends Value

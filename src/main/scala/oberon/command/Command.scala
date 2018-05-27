@@ -2,7 +2,6 @@ package oberon.command
 
 import oberon.Environment._
 import oberon.expression._
-
 trait Command {
   def run() : Unit 
 }
@@ -44,19 +43,6 @@ class Print(val exp: Expression) extends Command {
 
 }
 
-class Conditional(val cond: Expression, val ifCommand: Command, val elseCommand: Command = new BlockCommand(List())) extends Command {
-
-  override def run(): Unit = {
-
-    val value = cond.eval.asInstanceOf[BoolValue]
-
-    value match {
-      case BoolValue(true) => ifCommand.run()
-      case BoolValue(false) => elseCommand.run()
-    }
-  }
-}
-
 class For(val i: Expression, val range: Expression, val command: Command = new BlockCommand(List())) extends Command {
 
   override def run(): Unit = {
@@ -72,7 +58,26 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
     }
   }
 }
+class IfThen(val cond: Expression, val command : Command = new BlockCommand(List())) extends Command{
+   override def run(): Unit ={
+      val value = cond.eval.asInstanceOf[BoolValue]
 
+      value match{
+        case BoolValue(true) => command.run()
+        case BoolValue(false) =>
+      }
+  }
+}
+class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockCommand(List()), val elseCommand : Command= new BlockCommand(List())) extends Command {
+  override def run(): Unit ={
+    val value = cond.eval.asInstanceOf[BoolValue]
+
+    value match{
+      case BoolValue(true) => ifCommand.run()
+      case BoolValue(false) => elseCommand.run()
+    }
+  }
+}
 class DecVar(val datatype: String, val name: String) extends Command {
   def run(): Unit = {
 

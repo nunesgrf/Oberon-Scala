@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153e309b-60c5-4626-9111-3dcc3a6726b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThen.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThenElse.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/oberon-scala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/oberon-scala-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/oberon-scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/oberon-scala.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="IntExpression.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="18" column="76" lean-forward="true" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -39,38 +40,17 @@
       <file leaf-file-name="Expression.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VarRef.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestAddExpression.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="e#27#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDecVar.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestDecVar.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state>
+              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
               </folding>
@@ -81,58 +61,89 @@
       <file leaf-file-name="Command.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoolExpression.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestNotExpression.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestNotExpression.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="46">
+              <caret line="71" column="3" lean-forward="true" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
               <folding>
-                <element signature="e#27#56#0" expanded="true" />
+                <element signature="e#24#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestOrExpression.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestOrExpression.scala">
+      <file leaf-file-name="TestIfThen.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThen.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="112">
+              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding>
-                <element signature="e#27#56#0" expanded="true" />
+                <element signature="e#23#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSubExpression.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestSubExpression.scala">
+      <file leaf-file-name="TestIfThenElse.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThenElse.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="97">
+              <caret line="10" column="92" lean-forward="true" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
               <folding>
-                <element signature="e#27#56#0" expanded="true" />
+                <element signature="e#23#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Environment.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/Environment.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding>
+                <element signature="e#16#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VarRef.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestFor.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestFor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestConditional.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestConditional.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+              <folding>
+                <element signature="e#24#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -181,26 +192,42 @@
         <option value="$PROJECT_DIR$/src/test/scala/oberon/expression/TestSubExpression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/oberon/command/IfThen.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThen.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThenElse.scala" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="20" />
-    <option name="y" value="45" />
-    <option name="width" value="1334" />
-    <option name="height" value="703" />
+    <option name="x" value="267" />
+    <option name="width" value="1324" />
+    <option name="height" value="702" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,16 +307,28 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="oberon" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mini linguagem de Tecnicas de Programacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oberon-Scala" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="oberon" type="462c0819:PsiDirectoryNode" />
               <item name="expression" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -303,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.ScalaTests in 'scala'">
+  <component name="RunManager" selected="ScalaTest.TestIfThenElse.a IfThenElse commmand should if int value 20 == intvalue 50 then x -&gt; 20, else x -&gt; 100">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -323,9 +362,9 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ScalaTests in 'command'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true">
+    <configuration name="TestConditional.a conditional command should map x -&gt; 10 when 1 == 1 and map x -&gt; 20 when 1 != 1" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="oberon-scala" />
-      <setting name="path" value="" />
+      <setting name="path" value="oberon.command.TestConditional" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -334,116 +373,11 @@
       <setting name="useSbt" value="false" />
       <setting name="useUiWithSbt" value="false" />
       <envs />
-      <setting name="testKind" value="All in package" />
-      <setting name="package" value="oberon.command" />
-      <buffered bufClass="oberon.command.TestAssignment" />
-      <buffered bufClass="oberon.command.TestAssignment" />
-      <buffered bufClass="oberon.command.TestConditional" />
-      <buffered bufClass="oberon.command.TestConditional" />
-      <buffered bufClass="oberon.command.TestFor" />
-      <buffered bufClass="oberon.command.TestFor" />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="oberon.command.TestConditional" />
+      <setting name="testName" value="a conditional command should map x -&gt; 10 when 1 == 1 and map x -&gt; 20 when 1 != 1" />
     </configuration>
-    <configuration name="ScalaTests in 'expression'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true">
-      <module name="oberon-scala" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="All in package" />
-      <setting name="package" value="oberon.expression" />
-      <buffered bufClass="oberon.expression.TestAddExpression" />
-      <buffered bufClass="oberon.expression.TestAddExpression" />
-      <buffered bufClass="oberon.expression.TestAndExpression" />
-      <buffered bufClass="oberon.expression.TestAndExpression" />
-      <buffered bufClass="oberon.expression.TestEqExpression" />
-      <buffered bufClass="oberon.expression.TestEqExpression" />
-      <buffered bufClass="oberon.expression.TestExpression" />
-      <buffered bufClass="oberon.expression.TestExpression" />
-      <buffered bufClass="oberon.expression.TestNotExpression" />
-      <buffered bufClass="oberon.expression.TestNotExpression" />
-      <buffered bufClass="oberon.expression.TestOrExpression" />
-      <buffered bufClass="oberon.expression.TestOrExpression" />
-      <buffered bufClass="oberon.expression.TestSubExpression" />
-      <buffered bufClass="oberon.expression.TestSubExpression" />
-    </configuration>
-    <configuration name="ScalaTests in 'oberon'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true">
-      <module name="oberon-scala" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="All in package" />
-      <setting name="package" value="oberon" />
-      <buffered bufClass="oberon.command.TestAssignment" />
-      <buffered bufClass="oberon.command.TestAssignment" />
-      <buffered bufClass="oberon.command.TestConditional" />
-      <buffered bufClass="oberon.command.TestConditional" />
-      <buffered bufClass="oberon.command.TestDecVar" />
-      <buffered bufClass="oberon.command.TestDecVar" />
-      <buffered bufClass="oberon.command.TestFor" />
-      <buffered bufClass="oberon.command.TestFor" />
-      <buffered bufClass="oberon.expression.TestAddExpression" />
-      <buffered bufClass="oberon.expression.TestAddExpression" />
-      <buffered bufClass="oberon.expression.TestAndExpression" />
-      <buffered bufClass="oberon.expression.TestAndExpression" />
-      <buffered bufClass="oberon.expression.TestEqExpression" />
-      <buffered bufClass="oberon.expression.TestEqExpression" />
-      <buffered bufClass="oberon.expression.TestExpression" />
-      <buffered bufClass="oberon.expression.TestExpression" />
-      <buffered bufClass="oberon.expression.TestNotExpression" />
-      <buffered bufClass="oberon.expression.TestNotExpression" />
-      <buffered bufClass="oberon.expression.TestOrExpression" />
-      <buffered bufClass="oberon.expression.TestOrExpression" />
-      <buffered bufClass="oberon.expression.TestSubExpression" />
-      <buffered bufClass="oberon.expression.TestSubExpression" />
-    </configuration>
-    <configuration name="ScalaTests in 'scala'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true">
-      <module name="oberon-scala" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="All in package" />
-      <setting name="package" value="" />
-      <buffered bufClass="oberon.command.TestAssignment" />
-      <buffered bufClass="oberon.command.TestAssignment" />
-      <buffered bufClass="oberon.command.TestConditional" />
-      <buffered bufClass="oberon.command.TestConditional" />
-      <buffered bufClass="oberon.command.TestDecVar" />
-      <buffered bufClass="oberon.command.TestDecVar" />
-      <buffered bufClass="oberon.command.TestFor" />
-      <buffered bufClass="oberon.command.TestFor" />
-      <buffered bufClass="oberon.expression.TestAddExpression" />
-      <buffered bufClass="oberon.expression.TestAddExpression" />
-      <buffered bufClass="oberon.expression.TestAndExpression" />
-      <buffered bufClass="oberon.expression.TestAndExpression" />
-      <buffered bufClass="oberon.expression.TestEqExpression" />
-      <buffered bufClass="oberon.expression.TestEqExpression" />
-      <buffered bufClass="oberon.expression.TestExpression" />
-      <buffered bufClass="oberon.expression.TestExpression" />
-      <buffered bufClass="oberon.expression.TestNotExpression" />
-      <buffered bufClass="oberon.expression.TestNotExpression" />
-      <buffered bufClass="oberon.expression.TestOrExpression" />
-      <buffered bufClass="oberon.expression.TestOrExpression" />
-      <buffered bufClass="oberon.expression.TestSubExpression" />
-      <buffered bufClass="oberon.expression.TestSubExpression" />
-    </configuration>
-    <configuration name="TestDecVar" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="TestDecVar.Declaration of variables should Create an IntValue(0) with name: variable" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="oberon-scala" />
       <setting name="path" value="oberon.command.TestDecVar" />
       <setting name="vmparams" value="" />
@@ -454,8 +388,54 @@
       <setting name="useSbt" value="false" />
       <setting name="useUiWithSbt" value="false" />
       <envs />
-      <setting name="testKind" value="Class" />
+      <setting name="testKind" value="Test name" />
       <setting name="path" value="oberon.command.TestDecVar" />
+      <setting name="testName" value="Declaration of variables should Create an IntValue(0) with name: variable" />
+    </configuration>
+    <configuration name="TestFor.a for should" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="oberon-scala" />
+      <setting name="path" value="oberon.command.TestFor" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="oberon.command.TestFor" />
+      <setting name="testName" value="a for should" />
+    </configuration>
+    <configuration name="TestIfThenElse.a IfThenElse commmand should if int value 20 == intvalue 50 then x -&gt; 20, else x -&gt; 100" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="oberon-scala" />
+      <setting name="path" value="oberon.command.TestIfThenElse" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="oberon.command.TestIfThenElse" />
+      <setting name="testName" value="a IfThenElse commmand should if int value 20 == intvalue 50 then x -&gt; 20, else x -&gt; 100" />
+    </configuration>
+    <configuration name="TestIfThen.a IfThen command should if 10==10, x is on top of stack" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="oberon-scala" />
+      <setting name="path" value="oberon.command.TestIfThen" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="oberon.command.TestIfThen" />
+      <setting name="testName" value="a IfThen command should if 10==10, x is on top of stack" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -480,19 +460,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="ScalaTest.ScalaTests in 'expression'" />
-      <item itemvalue="ScalaTest.ScalaTests in 'command'" />
-      <item itemvalue="ScalaTest.ScalaTests in 'oberon'" />
-      <item itemvalue="ScalaTest.TestDecVar" />
-      <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
+      <item itemvalue="ScalaTest.TestFor.a for should" />
+      <item itemvalue="ScalaTest.TestDecVar.Declaration of variables should Create an IntValue(0) with name: variable" />
+      <item itemvalue="ScalaTest.TestConditional.a conditional command should map x -&gt; 10 when 1 == 1 and map x -&gt; 20 when 1 != 1" />
+      <item itemvalue="ScalaTest.TestIfThen.a IfThen command should if 10==10, x is on top of stack" />
+      <item itemvalue="ScalaTest.TestIfThenElse.a IfThenElse commmand should if int value 20 == intvalue 50 then x -&gt; 20, else x -&gt; 100" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
-        <item itemvalue="ScalaTest.TestDecVar" />
-        <item itemvalue="ScalaTest.ScalaTests in 'oberon'" />
-        <item itemvalue="ScalaTest.ScalaTests in 'expression'" />
-        <item itemvalue="ScalaTest.ScalaTests in 'command'" />
+        <item itemvalue="ScalaTest.TestIfThenElse.a IfThenElse commmand should if int value 20 == intvalue 50 then x -&gt; 20, else x -&gt; 100" />
+        <item itemvalue="ScalaTest.TestIfThen.a IfThen command should if 10==10, x is on top of stack" />
+        <item itemvalue="ScalaTest.TestConditional.a conditional command should map x -&gt; 10 when 1 == 1 and map x -&gt; 20 when 1 != 1" />
+        <item itemvalue="ScalaTest.TestFor.a for should" />
+        <item itemvalue="ScalaTest.TestDecVar.Declaration of variables should Create an IntValue(0) with name: variable" />
       </list>
     </recent_temporary>
   </component>
@@ -543,67 +523,76 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525873041209</updated>
+      <workItem from="1526634253752" duration="4461000" />
+      <workItem from="1527032809358" duration="631000" />
+      <workItem from="1527359837529" duration="14336000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScalaTests_in_'oberon' - 2018.05.09 at 20h 10m 02s.xml">
-      <configuration name="ScalaTests in 'oberon'" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestAddExpression_an_add_expressions_should_return_value_15_in_Add(IntValue(5),_IntValue(10))_an_add_expressions_should_lead_to_an_exception_in_Add(IntValue(5),_BoolValue(False)) - 2018.05.18 at 07h 04m 54s.xml">
+      <configuration name="TestAddExpression.an add expressions should return value 15 in Add(IntValue(5), IntValue(10))&#10;an add expressions should lead to an exception in Add(IntValue(5), BoolValue(False))" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScalaTests_in_'oberon' - 2018.05.09 at 20h 11m 48s.xml">
-      <configuration name="ScalaTests in 'oberon'" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestAddExpression_an_add_expressions_should_return_value_15_in_Add(IntValue(5),_IntValue(10))_an_add_expressions_should_lead_to_an_exception_in_Add(IntValue(5),_BoolValue(False)) - 2018.05.26 at 15h 46m 49s.xml">
+      <configuration name="TestAddExpression.an add expressions should return value 15 in Add(IntValue(5), IntValue(10))&#10;an add expressions should lead to an exception in Add(IntValue(5), BoolValue(False))" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScalaTests_in_'oberon' - 2018.05.09 at 20h 19m 46s.xml">
-      <configuration name="ScalaTests in 'oberon'" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestFor_a_for_should - 2018.05.26 at 21h 16m 18s.xml">
+      <configuration name="TestFor.a for should" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScalaTests_in_'scala' - 2018.05.11 at 17h 01m 14s.xml">
-      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestDecVar_Declaration_of_variables_should_Create_an_IntValue(0)_with_name__variable - 2018.05.26 at 21h 18m 43s.xml">
+      <configuration name="TestDecVar.Declaration of variables should Create an IntValue(0) with name: variable" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScalaTests_in_'scala' - 2018.05.11 at 17h 07m 12s.xml">
-      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestDecVar_Declaration_of_variables_should_Create_an_IntValue(0)_with_name__variable - 2018.05.26 at 21h 19m 17s.xml">
+      <configuration name="TestDecVar.Declaration of variables should Create an IntValue(0) with name: variable" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecVar - 2018.05.11 at 17h 07m 48s.xml">
-      <configuration name="TestDecVar" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestDecVar_Declaration_of_variables_should_Create_an_IntValue(0)_with_name__variable - 2018.05.26 at 21h 19m 34s.xml">
+      <configuration name="TestDecVar.Declaration of variables should Create an IntValue(0) with name: variable" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecVar - 2018.05.11 at 17h 09m 52s.xml">
-      <configuration name="TestDecVar" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestFor_a_for_should - 2018.05.26 at 21h 49m 55s.xml">
+      <configuration name="TestFor.a for should" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecVar - 2018.05.11 at 17h 10m 31s.xml">
-      <configuration name="TestDecVar" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestFor_a_for_should - 2018.05.27 at 09h 16m 54s.xml">
+      <configuration name="TestFor.a for should" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestDecVar - 2018.05.11 at 17h 11m 06s.xml">
-      <configuration name="TestDecVar" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestConditional_a_conditional_command_should_map_x_-__10_when_1_==_1_and_map_x_-__20_when_1_!=_1 - 2018.05.27 at 09h 38m 05s.xml">
+      <configuration name="TestConditional.a conditional command should map x -&gt; 10 when 1 == 1 and map x -&gt; 20 when 1 != 1" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ScalaTests_in_'scala' - 2018.05.11 at 17h 12m 33s.xml">
-      <configuration name="ScalaTests in 'scala'" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="TestIfThen_a_IfThen_command_should_if_10==10,_x_is_on_top_of_stack - 2018.05.27 at 10h 29m 33s.xml">
+      <configuration name="TestIfThen.a IfThen command should if 10==10, x is on top of stack" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19428000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32880846" />
       <window_info anchor="right" id="sbt" order="9" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50073206" side_tool="true" weight="0.32880846" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.32880846" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="9" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32880846" />
+      <window_info anchor="right" id="Database" order="0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32744783" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.32744783" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19765739" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="9" />
+      <window_info id="Learn" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" id="Gradle" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -631,7 +620,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50073206" side_tool="true" weight="0.32880846" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="right" id="Gradle" order="7" />
@@ -643,43 +631,22 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestNotExpression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#27#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestOrExpression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="e#27#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestSubExpression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#27#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -690,13 +657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestDivExpression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestDivExpression.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -750,9 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#24#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,66 +826,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestIntExpression.scala" />
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestAssignment.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestConditional.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestFor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="10" column="83" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/Environment.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestAndExpression.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
-          <folding>
-            <element signature="e#27#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,30 +850,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestNotExpression.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#27#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestOrExpression.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="330">
           <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestSubExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestAssignment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="95" lean-forward="true" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
           <folding>
             <element signature="e#27#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestSubExpression.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/IfThen.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="165">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
-            <element signature="e#27#56#0" expanded="true" />
+            <element signature="e#23#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -982,50 +934,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestFor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestConditional.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/Environment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#16#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
           <folding>
-            <element signature="e#27#56#0" expanded="true" />
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="76" lean-forward="true" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThen.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="46">
+          <caret line="71" column="3" lean-forward="true" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
           <folding>
-            <element signature="e#24#53#0" expanded="true" />
+            <element signature="e#24#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThenElse.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="10" column="92" lean-forward="true" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
