@@ -1,4 +1,4 @@
-import oberon.command.{Assignment, BlockCommand, Command, While}
+import oberon.command._
 import oberon.expression._
 import oberon.Environment.lookup
 object Main extends App {
@@ -10,13 +10,11 @@ object Main extends App {
   op.run
   println(lookup("a"))
 
-  val list1: List[Command] = new Assignment("b",IntValue(3))::Nil
-  val list = new BlockCommand(list1)
-  new Procedure(list).exe
+  val list1: List[Command] = new Assignment("b",IntValue(3))::new Return(IntValue(3))::Nil
+
+  val ope = new Function(list1)
+  println(ope.exe)
 
   println(lookup("b"))
 
-
-  val ope = new Function(list)
-  println(ope.exe)
 }
