@@ -83,3 +83,10 @@ class DecVar(val datatype: String, val name: String) extends Command {
     }
   }
 }
+
+class Procedure(val command: Command = new BlockCommand(List()))  {
+  command.run()
+}
+
+
+
