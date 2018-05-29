@@ -88,5 +88,10 @@ class Procedure(val command: Command = new BlockCommand(List()))  {
   command.run()
 }
 
+class Return(v: Value) extends Value with Command {
+  override def run(): Unit = {}
+  override def eval(): Value = v
+}
+
 
 
