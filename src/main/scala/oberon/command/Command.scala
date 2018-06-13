@@ -82,8 +82,8 @@ class DecVar(val datatype: String, val name: String) extends Command {
   def run(): Unit = {
 
     datatype match {
-      case "int"  => new Assignment(name, IntValue(0)).run()
-      case "bool" => new Assignment(name, BoolValue(false)).run()
+      case "int"  => new Assignment(name, Uninitialized()).run()
+      case "bool" => new Assignment(name, Uninitialized()).run()
       case _      =>
     }
   }
