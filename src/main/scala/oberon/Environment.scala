@@ -13,9 +13,8 @@ import oberon.expression._
 import scala.collection.mutable
 
 object Environment {
-  var stack = new Stack[Map[String, Value]]()
-  var hashProcedure = new HashMap[String, List[Variable]]
-  var stackProcedure = new Stack[List[Command]]
+  private val stack = Stack[Map[String, Value]]()
+  private val stackProcedure =  Stack[Map[String,Procedure]]()
 
   def push() {
     stack.push(new HashMap[String, Value]())
@@ -37,6 +36,28 @@ object Environment {
 
   def clear(): Unit = {
     stack.clear()
+  }
+
+  def pushProcedure(): Unit = {
+    stackProcedure.push(new HashMap[String, Procedure]())
+  }
+
+  def popProcedure(): Unit = {
+    stackProcedure.pop()
+  }
+
+  def mapProcedure(id: String, value: Procedure): Unit = {
+    if(stackProcedure.isEmpty) {
+      pushProcedure()
+    }
+    stackProcedure.top += (id -> value)
+  }
+
+  def lookupProcedure(id: String): Option[Procedure] =
+    if (stackProcedure.isEmpty) None else Some(stackProcedure.top(id))
+
+  def clearProcedure(): Unit = {
+    stackProcedure.clear()
   }
 
 }

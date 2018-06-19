@@ -1,7 +1,7 @@
 package oberon.expression
 import oberon.command._
-import oberon.expression._
-case class Variable(val variableType : String,val name : String, val value : Value = Uninitialized()){
+
+case class Variable(variableType : String, name : String, value : Value = Uninitialized()){
   variableType match{
     case "int" =>{ var variable = new DecVar("int", name).run()
                      variable = new Assignment(name,value).run()
