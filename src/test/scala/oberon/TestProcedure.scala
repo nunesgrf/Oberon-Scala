@@ -7,7 +7,7 @@ import org.scalatest.GivenWhenThen
 import org.scalatest.BeforeAndAfter
 import oberon.expression.Procedure
 import oberon.expression.Variable
-import oberon.Environment._
+import oberon.defEnvironment._
 
 class TestProcedure extends FlatSpec with Matchers with GivenWhenThen with BeforeAndAfter {
 
@@ -20,7 +20,7 @@ class TestProcedure extends FlatSpec with Matchers with GivenWhenThen with Befor
     procedure.declare()
 
     var result = ""
-    lookupProcedure("foo") match {
+    lookup("foo") match {
       case None    => result = "Error"
       case Some(a) => result = a.id
     }

@@ -14,7 +14,6 @@ import scala.collection.mutable
 
 object Environment {
   private val stack = Stack[Map[String, Value]]()
-  private val stackProcedure =  Stack[Map[String,Procedure]]()
 
   def push() {
     stack.push(new HashMap[String, Value]())
@@ -37,27 +36,31 @@ object Environment {
   def clear(): Unit = {
     stack.clear()
   }
+}
 
-  def pushProcedure(): Unit = {
-    stackProcedure.push(new HashMap[String, Procedure]())
+object defEnvironment {
+
+  private val stack =  Stack[Map[String,defTrait]]()
+
+  def push(): Unit = {
+    stack.push(new HashMap[String, defTrait]())
   }
 
-  def popProcedure(): Unit = {
-    stackProcedure.pop()
+  def pop(): Unit = {
+    stack.pop()
   }
 
-  def mapProcedure(id: String, value: Procedure): Unit = {
-    if(stackProcedure.isEmpty) {
-      pushProcedure()
+  def map(id: String, value: defTrait): Unit = {
+    if(stack.isEmpty) {
+      push()
     }
-    stackProcedure.top += (id -> value)
+    stack.top += (id -> value)
   }
 
-  def lookupProcedure(id: String): Option[Procedure] =
-    if (stackProcedure.isEmpty) None else Some(stackProcedure.top(id))
+  def lookup(id: String): Option[defTrait] =
+    if (stack.isEmpty) None else Some(stack.top(id))
 
-  def clearProcedure(): Unit = {
-    stackProcedure.clear()
+  def clear(): Unit = {
+    stack.clear()
   }
-
 }
