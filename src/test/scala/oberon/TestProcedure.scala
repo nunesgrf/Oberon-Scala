@@ -10,12 +10,12 @@ import oberon.expression.Variable
 import oberon.defEnvironment._
 import oberon.command._
 
-/*class TestProcedure extends FlatSpec with Matchers with GivenWhenThen with BeforeAndAfter {
+class TestProcedure extends FlatSpec with Matchers with GivenWhenThen with BeforeAndAfter {
 
   it should "salvar uma procedure quando a mesma é declarada" in {
 
-    val values = List(IntValue(3), BoolValue(true))
-    val procedure =  DecProcedure("foo", new BlockCommand(List()), values)
+    val varTests = List(Variable("Bool","VarTest1"), Variable("Int","VarTest2"))
+    val procedure =  DecProcedure("foo", new BlockCommand(List()), varTests)
 
     procedure.declare()
 
@@ -30,14 +30,13 @@ import oberon.command._
 
   it should "print" in {
 
-    val values = List(IntValue(3), BoolValue(true))
-    val procedure =  DecProcedure("foo", new BlockCommand(List()), values)
+    val varTests = List(Variable("Bool","VarTest1"), Variable("Int","VarTest2"))
+    val procedure =  DecProcedure("foo", new BlockCommand(List()), varTests)
 
     procedure.declare()
 
-    val test = ProcedureCall("foo",List(IntValue(2),IntValue(3)))
+    val test = ProcedureCall("foo",List(BoolValue(false),IntValue(3)))
     test.run()
   }
 
 }
-*/
