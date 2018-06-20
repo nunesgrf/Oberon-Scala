@@ -7,5 +7,7 @@ trait defTrait {
   val blockcmd: Command
   val args: List[Variable]
 
-  def declare()
+  def declare(): Unit
+  def verify(param: List[Value]): Boolean
+  def load_args(param: List[Value]): Unit
 }

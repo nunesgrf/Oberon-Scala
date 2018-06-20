@@ -1,3 +1,5 @@
+import oberon.expression._
+
 object Main extends App {
-  println("Hello, World!")
+  print("hey".isInstanceOf[String])
 }

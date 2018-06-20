@@ -15,6 +15,6 @@ class IntExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,
   def dif: Value = BoolValue(v1.value != v2.value)
   def men: Value = BoolValue(v1.value < v2.value)
   def mai: Value = BoolValue(v1.value > v2.value)
-  def meneqq: Value = BoolValue(v1.value < v2.value || v1.value == v2.value)
-  def maieqq: Value = BoolValue(v1.value > v2.value || v1.value == v2.value)
+  def meneqq: Value = BoolValue(v1.value <= v2.value)
+  def maieqq: Value = BoolValue(v1.value >= v2.value)
 }

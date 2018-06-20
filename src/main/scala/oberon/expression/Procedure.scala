@@ -3,13 +3,42 @@ import oberon.expression._
 import oberon.command._
 import oberon.defEnvironment._
 
-case class Procedure(id : String, blockcmd : Command = new BlockCommand(List()), args: List[Variable] ) extends ProcedureTrait with defTrait{
+case class DecProcedure(id : String, blockcmd : Command = new BlockCommand(List()), args: List[Variable] ) extends defTrait {
 
-  def declare(): Unit = {
-    map(id,this)
+  private var flag = true
+
+  def declare(): Unit = map(id,this)
+
+  def verify(param: List[Value]): Boolean = {
+
+    if(args.length == param.length) {
+      for(i <- args.indices) {
+        if(!args(i).isValueType(param(i))) flag = false
+      }
+      flag
+    }
+    else false
+  }
+
+  def load_args(param: List[Value]): Unit = {
+    for(i <- args.indices) args(i).Assign(param(i))
+  }
+
+}
+
+case class ProcedureCall(id: String, param: List[Value]) extends Command with ProcedureTrait {
+
+  private def exe(procedure: defTrait): Unit = {
+    procedure.load_args(param)
+    procedure.blockcmd.run()
   }
 
   def run(): Unit = {
-    blockcmd.run()
+    lookup(id) match {
+      case None            =>  println("Não existe tal função")
+      case Some(procedure) =>
+        if(procedure.verify(param)) this.exe(procedure)
+        else println("Argumentos não condizem com o procedimento")
+    }
   }
 }
