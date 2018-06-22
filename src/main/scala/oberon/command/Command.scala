@@ -2,6 +2,7 @@ package oberon.command
 
 import oberon.Environment._
 import oberon.expression._
+
 trait Command {
   def run() : Unit 
 }
@@ -26,11 +27,11 @@ class Assignment(val id: String, val expression: Expression) extends Command {
 class While(val cond: Expression, val command: Command) extends Command {
   override
   def run() : Unit = {
-    val v = cond.eval.asInstanceOf[BoolValue]
+    val v = cond.eval().asInstanceOf[BoolValue]
 
     v match {
-      case BoolValue(true) => { command.run(); run(); }
-      case _               => { } 
+      case BoolValue(true) => command.run(); run();
+      case _               =>
     }
   }
 }
@@ -49,7 +50,7 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
 
     val runLoop = new IntExpression(i,range).eqq
 
-    runLoop.eval match {
+    runLoop.eval() match {
       case BoolValue(false) => {
         command.run()
         new For(new IntExpression(i,IntValue(1)).add, range, command).run()
@@ -60,7 +61,7 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
 }
 class IfThen(val cond: Expression, val command : Command = new BlockCommand(List())) extends Command{
    override def run(): Unit ={
-      val value = cond.eval.asInstanceOf[BoolValue]
+      val value = cond.eval().asInstanceOf[BoolValue]
 
       value match{
         case BoolValue(true) => command.run()
@@ -70,7 +71,7 @@ class IfThen(val cond: Expression, val command : Command = new BlockCommand(List
 }
 class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockCommand(List()), val elseCommand : Command= new BlockCommand(List())) extends Command {
   override def run(): Unit ={
-    val value = cond.eval.asInstanceOf[BoolValue]
+    val value = cond.eval().asInstanceOf[BoolValue]
 
     value match{
       case BoolValue(true) => ifCommand.run()
@@ -78,6 +79,8 @@ class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockComma
     }
   }
 }
+
+// TODO: Verificar se a classe DecVar é realmente necessária.
 class DecVar(val datatype: String, val name: String) extends Command {
   def run(): Unit = {
 

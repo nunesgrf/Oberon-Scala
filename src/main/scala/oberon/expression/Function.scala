@@ -1,8 +1,7 @@
 package oberon.expression
 
-import oberon.command.{Assignment, Command}
+import oberon.command.Command
 import oberon.defEnvironment._
-import oberon.expression._
 
 case class Function(id: String, blockcmd: Command, args: List[Variable] = List()) extends defTrait{
 

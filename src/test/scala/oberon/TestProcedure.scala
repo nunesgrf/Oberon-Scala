@@ -35,7 +35,7 @@ class TestProcedure extends FlatSpec with Matchers with GivenWhenThen with Befor
 
     procedure.declare()
 
-    val test = ProcedureCall("foo",List(BoolValue(false),IntValue(3)))
+    val test = ProcedureCall("foo",List(BoolValue(true),IntValue(3)))
     test.run()
   }
 

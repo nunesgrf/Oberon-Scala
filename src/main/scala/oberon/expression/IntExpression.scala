@@ -1,20 +1,157 @@
 package oberon.expression
 
-class IntExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+import oberon.visitor.Visitor
 
-  private val v1 = lhs.eval().asInstanceOf[IntValue]
-  private val v2 = rhs.eval().asInstanceOf[IntValue]
+class AddExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
 
-  override def eval(): Value = BoolValue(true)
-  def mod: Value = IntValue(v1.value%v2.value)
-  def div: Value = IntValue(v1.value/v2.value)
-  def mul: Value = IntValue(v1.value*v2.value)
-  def sub: Value = IntValue(v1.value-v2.value)
-  def add: Value = IntValue(v1.value+v2.value)
-  def eqq: Value = BoolValue(v1.value == v2.value)
-  def dif: Value = BoolValue(v1.value != v2.value)
-  def men: Value = BoolValue(v1.value < v2.value)
-  def mai: Value = BoolValue(v1.value > v2.value)
-  def meneqq: Value = BoolValue(v1.value <= v2.value)
-  def maieqq: Value = BoolValue(v1.value >= v2.value)
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    IntValue(v1.value + v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class SubExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    IntValue(v1.value - v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class DivExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    IntValue(v1.value / v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class MulExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    IntValue(v1.value * v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class ModExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    IntValue(v1.value % v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class EqExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    BoolValue(v1.value == v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class DifExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    BoolValue(v1.value != v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class MenExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    BoolValue(v1.value < v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class MaiExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    BoolValue(v1.value > v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class LEqExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    BoolValue(v1.value <= v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class MEqExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[IntValue]
+    val v2 = rhs.eval().asInstanceOf[IntValue]
+
+    BoolValue(v1.value >= v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }

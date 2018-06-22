@@ -1,5 +1,5 @@
 package oberon.expression
 
-abstract class BinExpression(lhs: Expression, rhs: Expression) extends Expression {
+abstract case class BinExpression(lhs: Expression, rhs: Expression) extends Expression {
 
 }

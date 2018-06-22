@@ -1,13 +1,45 @@
 package oberon.expression
 
-class BoolExpression(lhs: Expression, rhs: Expression = BoolValue(true)) extends BinExpression(lhs,rhs) {
+import oberon.visitor.Visitor
 
-  private val v1 = lhs.eval().asInstanceOf[BoolValue]
-  private val v2 = rhs.eval().asInstanceOf[BoolValue]
 
-  override def eval(): Value = BoolValue(true)
-  def or: Value = BoolValue(v1.value || v2.value)
-  def and: Value = BoolValue(v1.value && v2.value)
-  def not: Value = BoolValue(!v1.value)
-  def implies: Value = BoolValue(!v1.value || v2.value)
+class OrExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[BoolValue]
+    val v2 = rhs.eval().asInstanceOf[BoolValue]
+
+    BoolValue(v1.value || v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class AndExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
+
+  def eval(): Value = {
+    val v1 = lhs.eval().asInstanceOf[BoolValue]
+    val v2 = rhs.eval().asInstanceOf[BoolValue]
+
+    BoolValue(v1.value && v2.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
+}
+
+class NotExpression(v: Expression) extends Expression {
+
+  def eval(): Value = {
+    val v1 = v.eval().asInstanceOf[BoolValue]
+
+    BoolValue(!v1.value)
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }
