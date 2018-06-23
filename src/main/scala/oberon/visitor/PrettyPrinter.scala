@@ -116,7 +116,6 @@ class PrettyPrinter extends Visitor {
   def visit(e: VarRef)        : Unit = {
     str = e.id
   }
-
   // TODO: BlockCommand com problemas
   def visit(c: BlockCommand)  : Unit = {
     println(c.cmds.length)

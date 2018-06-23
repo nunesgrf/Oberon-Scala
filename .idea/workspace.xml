@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153e309b-60c5-4626-9111-3dcc3a6726b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,29 +23,29 @@
     <session id="-809824860">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scala" value="121" />
+          <entry key="scala" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Scala" value="121" />
+          <entry key="Scala" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="16711" />
+          <entry key="scala" value="16715" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="16711" />
+          <entry key="Scala" value="16715" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -66,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+            <state relative-caret-position="195">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -79,6 +73,46 @@
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="e#27#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
+              <folding>
+                <element signature="e#24#58#0" expanded="true" />
+                <element signature="e#461#605#0" />
+                <element signature="e#608#766#0" />
+                <element signature="e#769#888#0" />
+                <element signature="e#891#1015#0" />
+                <element signature="e#1362#1491#0" />
+                <element signature="e#1494#1605#0" />
+                <element signature="e#1608#1719#0" />
+                <element signature="e#1722#1833#0" />
+                <element signature="e#1836#1946#0" />
+                <element signature="e#1949#2059#0" />
+                <element signature="e#2062#2173#0" />
+                <element signature="e#2176#2286#0" />
+                <element signature="e#2289#2399#0" />
+                <element signature="e#2402#2512#0" />
+                <element signature="e#2515#2625#0" />
+                <element signature="e#2629#2735#0" />
+                <element signature="e#2738#2849#0" />
+                <element signature="e#2852#2963#0" />
+                <element signature="e#2967#3038#0" />
+                <element signature="e#3042#3205#0" />
+                <element signature="e#3208#3313#0" />
+                <element signature="e#3316#3500#0" />
+                <element signature="e#3503#3603#0" />
+                <element signature="e#3606#3786#0" />
+                <element signature="e#3789#4082#0" />
+                <element signature="e#4085#4298#0" />
+                <element signature="e#4301#4379#0" />
+                <element signature="e#4382#4626#0" />
               </folding>
             </state>
           </provider>
@@ -159,11 +193,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" />
       </list>
     </option>
   </component>
@@ -193,126 +227,126 @@
   <component name="ProjectUserFactors">
     <factor id="binaryFeature:liftShorter">
       <dailyData date="23-6-2018">
-        <observation name="false" value="646,0" />
+        <observation name="false" value="647,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
       <dailyData date="23-6-2018">
-        <observation name="false" value="644,0" />
+        <observation name="false" value="645,0" />
         <observation name="true" value="2,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="false" value="176,0" />
+        <observation name="false" value="177,0" />
         <observation name="true" value="457,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="false" value="355,0" />
+        <observation name="false" value="356,0" />
         <observation name="true" value="278,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="false" value="488,0" />
+        <observation name="false" value="489,0" />
         <observation name="true" value="145,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="false" value="292,0" />
+        <observation name="false" value="293,0" />
         <observation name="true" value="341,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="false" value="617,0" />
+        <observation name="false" value="618,0" />
         <observation name="true" value="16,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
       <dailyData date="23-6-2018">
-        <observation name="false" value="633,0" />
+        <observation name="false" value="634,0" />
         <observation name="true" value="13,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="unknown" value="633,0" />
+        <observation name="unknown" value="634,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
         <observation name="false" value="165,0" />
-        <observation name="null" value="468,0" />
+        <observation name="null" value="469,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="unknown" value="633,0" />
+        <observation name="unknown" value="634,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
       <dailyData date="23-6-2018">
         <observation name="cancelled" value="1181,0" />
         <observation name="explicitSelect" value="204,0" />
-        <observation name="typedSelect" value="442,0" />
+        <observation name="typedSelect" value="443,0" />
       </dailyData>
     </factor>
     <factor id="completionType">
       <dailyData date="23-6-2018">
-        <observation name="BASIC" value="997,0" />
+        <observation name="BASIC" value="998,0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
       <dailyData date="23-6-2018">
-        <observation name="count" value="1827,0" />
+        <observation name="count" value="1828,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
       <dailyData date="23-6-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="1291,0" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -321,7 +355,7 @@
     <factor id="doubleFeature:grouping">
       <dailyData date="23-6-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="1291,0" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -329,36 +363,36 @@
     </factor>
     <factor id="doubleFeature:mostUsed">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
       <dailyData date="23-6-2018">
-        <observation name="average" value="0,125484" />
-        <observation name="count" value="1291,0" />
+        <observation name="average" value="0,12529" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="27,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,752782" />
+        <observation name="variance" value="0,752212" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
       <dailyData date="23-6-2018">
-        <observation name="average" value="-738,774593" />
-        <observation name="count" value="1291,0" />
+        <observation name="average" value="-739,415313" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="-1203,0" />
-        <observation name="variance" value="248605,081614" />
+        <observation name="variance" value="248545,205052" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
       <dailyData date="23-6-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="1291,0" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -367,47 +401,47 @@
     <factor id="doubleFeature:prox_explicitlyImported">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="average" value="82,529644" />
-        <observation name="count" value="1265,0" />
+        <observation name="average" value="82,399369" />
+        <observation name="count" value="1267,0" />
         <observation name="max" value="300,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="13850,299848" />
+        <observation name="variance" value="13844,731355" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="average" value="0,105929" />
-        <observation name="count" value="1265,0" />
+        <observation name="average" value="0,105762" />
+        <observation name="count" value="1267,0" />
         <observation name="max" value="8,0" />
         <observation name="min" value="-1,0" />
-        <observation name="variance" value="0,475048" />
+        <observation name="variance" value="0,474681" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="average" value="1,233202" />
-        <observation name="count" value="1265,0" />
+        <observation name="average" value="1,231255" />
+        <observation name="count" value="1267,0" />
         <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,889494" />
+        <observation name="variance" value="0,88999" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
       <dailyData date="23-6-2018">
         <observation name="UNDEFINED" value="13,0" />
-        <observation name="average" value="0,287747" />
-        <observation name="count" value="1265,0" />
+        <observation name="average" value="0,287293" />
+        <observation name="count" value="1267,0" />
         <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,269732" />
+        <observation name="variance" value="0,269584" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
       <dailyData date="23-6-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="1291,0" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -415,32 +449,32 @@
     </factor>
     <factor id="doubleFeature:result_length">
       <dailyData date="23-6-2018">
-        <observation name="average" value="5,597211" />
-        <observation name="count" value="1291,0" />
+        <observation name="average" value="5,594741" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="14,0" />
         <observation name="min" value="1,0" />
-        <observation name="variance" value="12,975541" />
+        <observation name="variance" value="12,967474" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
       <dailyData date="23-6-2018">
         <observation name="average" value="1,0" />
-        <observation name="count" value="1291,0" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="1,0" />
         <observation name="min" value="1,0" />
         <observation name="variance" value="0,0" />
@@ -448,16 +482,16 @@
     </factor>
     <factor id="doubleFeature:statics">
       <dailyData date="23-6-2018">
-        <observation name="UNDEFINED" value="646,0" />
+        <observation name="UNDEFINED" value="647,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
       <dailyData date="23-6-2018">
-        <observation name="average" value="4411,79086" />
-        <observation name="count" value="1291,0" />
+        <observation name="average" value="4404,966744" />
+        <observation name="count" value="1293,0" />
         <observation name="max" value="10000,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="23098573,606844" />
+        <observation name="variance" value="23095727,649209" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
@@ -492,8 +526,8 @@
     </factor>
     <factor id="timeBetweenTyping">
       <dailyData date="23-6-2018">
-        <observation name="average" value="227,929018" />
-        <observation name="count" value="1761,0" />
+        <observation name="average" value="227,798639" />
+        <observation name="count" value="1763,0" />
       </dailyData>
     </factor>
   </component>
@@ -604,7 +638,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529790160385" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529791156982" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -898,7 +932,7 @@
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24318182" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24318182" />
       <window_info id="Learn" order="1" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
@@ -909,7 +943,7 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.36391914" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.36391914" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1171,50 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="149" column="35" lean-forward="true" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-            <element signature="e#461#708#0" />
-            <element signature="e#711#870#0" />
-            <element signature="e#769#892#0" />
-            <element signature="e#895#1019#0" />
-            <element signature="e#1212#1341#0" />
-            <element signature="e#1344#1455#0" />
-            <element signature="e#1458#1569#0" />
-            <element signature="e#1572#1683#0" />
-            <element signature="e#1686#1796#0" />
-            <element signature="e#1799#1909#0" />
-            <element signature="e#1912#2023#0" />
-            <element signature="e#2026#2136#0" />
-            <element signature="e#2139#2249#0" />
-            <element signature="e#2252#2362#0" />
-            <element signature="e#2365#2475#0" />
-            <element signature="e#2479#2585#0" />
-            <element signature="e#2588#2699#0" />
-            <element signature="e#2702#2813#0" />
-            <element signature="e#3023#3102#0" />
-            <element signature="e#2808#2855#0" />
-            <element signature="e#3293#3340#0" />
-            <element signature="e#2894#2942#0" />
-            <element signature="e#3402#3579#0" />
-            <element signature="e#3183#3384#0" />
-            <element signature="e#4104#4151#0" />
-            <element signature="e#4281#4329#0" />
-            <element signature="e#4321#4523#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -1261,6 +1251,51 @@
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
+            <element signature="e#461#605#0" />
+            <element signature="e#608#766#0" />
+            <element signature="e#769#888#0" />
+            <element signature="e#891#1015#0" />
+            <element signature="e#1362#1491#0" />
+            <element signature="e#1494#1605#0" />
+            <element signature="e#1608#1719#0" />
+            <element signature="e#1722#1833#0" />
+            <element signature="e#1836#1946#0" />
+            <element signature="e#1949#2059#0" />
+            <element signature="e#2062#2173#0" />
+            <element signature="e#2176#2286#0" />
+            <element signature="e#2289#2399#0" />
+            <element signature="e#2402#2512#0" />
+            <element signature="e#2515#2625#0" />
+            <element signature="e#2629#2735#0" />
+            <element signature="e#2738#2849#0" />
+            <element signature="e#2852#2963#0" />
+            <element signature="e#2967#3038#0" />
+            <element signature="e#3042#3205#0" />
+            <element signature="e#3208#3313#0" />
+            <element signature="e#3316#3500#0" />
+            <element signature="e#3503#3603#0" />
+            <element signature="e#3606#3786#0" />
+            <element signature="e#3789#4082#0" />
+            <element signature="e#4085#4298#0" />
+            <element signature="e#4301#4379#0" />
+            <element signature="e#4382#4626#0" />
           </folding>
         </state>
       </provider>

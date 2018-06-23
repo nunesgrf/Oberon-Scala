@@ -12,6 +12,6 @@ class TestDecVar extends FlatSpec with Matchers with GivenWhenThen with BeforeAn
   it should "Create an uninitialized variable named variable " in {
     val test = new DecVar("int","variable")
     test.run()
-    new VarRef("variable").eval() should be (Uninitialized())
+    VarRef("variable").eval() should be (Uninitialized())
   }
 }
