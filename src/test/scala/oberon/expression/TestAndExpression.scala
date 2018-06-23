@@ -9,14 +9,14 @@ class TestAndExpression extends FlatSpec with Matchers with GivenWhenThen with B
 
   it should "return false for an input: false && false" in {
 
-    val and = new BoolExpression(BoolValue(false),BoolValue(false)).and
+    val and = new AndExpression(BoolValue(false),BoolValue(false)).eval()
 
     and should be (BoolValue(false))
   }
 
   it should "return false for an input: true && false" in {
 
-    val and = new BoolExpression(BoolValue(true),BoolValue(false)).and
+    val and = new AndExpression(BoolValue(true),BoolValue(false)).eval()
 
     and should be (BoolValue(false))
 
@@ -24,14 +24,14 @@ class TestAndExpression extends FlatSpec with Matchers with GivenWhenThen with B
 
   it should "return false for an input: false && true" in {
 
-    val and = new BoolExpression(BoolValue(false),BoolValue(true)).and
+    val and = new AndExpression(BoolValue(false),BoolValue(true)).eval()
 
     and.eval() should be (BoolValue(false))
   }
 
   it should "return true for an input: true && true" in {
 
-    val and = new BoolExpression(BoolValue(true),BoolValue(true)).and
+    val and = new AndExpression(BoolValue(true),BoolValue(true)).eval()
 
     and.eval() should be (BoolValue(true))
   }

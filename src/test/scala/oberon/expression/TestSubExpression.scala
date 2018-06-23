@@ -11,7 +11,7 @@ class TestSubExpression extends FlatSpec with Matchers with GivenWhenThen with B
   behavior of "an add expressions"
 
   it should "return value -5 in Sub(IntValue(5), IntValue(10))" in {
-    val sub   = new IntExpression(IntValue(5), IntValue(10)).sub
+    val sub   = new SubExpression(IntValue(5), IntValue(10))
     sub.eval() should be (IntValue(-5))
   }
 

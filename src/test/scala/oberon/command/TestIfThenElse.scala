@@ -14,7 +14,7 @@ class TestIfThenElse extends FlatSpec with Matchers with GivenWhenThen with Befo
   it should "if int value 20 == intvalue 50 then x -> 20, else x -> 100" in{
     val listIf : List[Command] =  List(new Assignment("x",IntValue(20)))
     val listElse : List[Command] = List(new Assignment("x",IntValue(100)))
-    val cond = new IntExpression(IntValue(20),IntValue(50)).eqq
+    val cond = new EqExpression(IntValue(20),IntValue(50))
     val ifcmd = new BlockCommand(listIf)
     val elsecmd = new BlockCommand(listElse)
     val ifThenElse = new  IfThenElse(cond, ifcmd, elsecmd)

@@ -1,11 +1,11 @@
 package oberon.expression
 import oberon.command._
 
-case class Variable(var variableType : String = "Undefined", name : String, var value : Value = Uninitialized()) extends Value {
+case class Variable(var variableType : String = "Undefined", name : String, var value : Value = Uninitialized()) {
 
   Assign(this.value)
 
-  override def eval(): Value = this.value
+  def eval(): Value = this.value
 
   def Assign(v: Value): Variable = {
 

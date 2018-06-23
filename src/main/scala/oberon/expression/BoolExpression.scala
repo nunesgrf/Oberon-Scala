@@ -5,7 +5,7 @@ import oberon.visitor.Visitor
 
 class OrExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
 
-  def eval(): Value = {
+  def eval(): BoolValue = {
     val v1 = lhs.eval().asInstanceOf[BoolValue]
     val v2 = rhs.eval().asInstanceOf[BoolValue]
 
@@ -19,7 +19,7 @@ class OrExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,r
 
 class AndExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
 
-  def eval(): Value = {
+  def eval(): BoolValue = {
     val v1 = lhs.eval().asInstanceOf[BoolValue]
     val v2 = rhs.eval().asInstanceOf[BoolValue]
 
@@ -31,9 +31,9 @@ class AndExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,
   }
 }
 
-class NotExpression(v: Expression) extends Expression {
+case class NotExpression(v: Expression) extends Expression {
 
-  def eval(): Value = {
+  def eval(): BoolValue = {
     val v1 = v.eval().asInstanceOf[BoolValue]
 
     BoolValue(!v1.value)

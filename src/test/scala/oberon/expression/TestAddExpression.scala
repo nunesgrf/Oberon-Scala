@@ -11,7 +11,7 @@ class TestAddExpression extends FlatSpec with Matchers with GivenWhenThen with B
   behavior of "an add expressions"
 
   it should "return value 15 in Add(IntValue(5), IntValue(10))" in {
-    val op = new IntExpression(IntValue(5),IntValue(10)).add
+    val op = new AddExpression(IntValue(5),IntValue(10)).eval()
 
     op should be (IntValue(15))
   }

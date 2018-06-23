@@ -8,13 +8,13 @@ import org.scalatest.BeforeAndAfter
 class TestNotExpression extends FlatSpec with Matchers with GivenWhenThen with BeforeAndAfter {
 
   it should "return true for an input: false" in {
-    val not = new BoolExpression(BoolValue(false)).not
+    val not = new NotExpression(BoolValue(false))
 
     not.eval should be (BoolValue(true))
   }
 
   it should "return false for an input: true" in {
-    val not = new BoolExpression(BoolValue(true)).not
+    val not = new NotExpression(BoolValue(true))
 
     not.eval should be (BoolValue(false))
   }

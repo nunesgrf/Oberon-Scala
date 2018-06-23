@@ -10,6 +10,8 @@ import oberon.command.BlockCommand
 import oberon.command.Assignment
 import oberon.command.While
 import oberon.command.Print
+import oberon.command.IfThen
+import oberon.command._
 import oberon.OberonProgram
 
 trait Visitable {
@@ -24,6 +26,7 @@ trait Visitor {
   def visit(e: IntValue)      : Unit
   def visit(e: BoolValue)     : Unit
   def visit(e: VarRef)        : Unit
+  def visit(e: Return)        : Unit
 
   // IntExpression
   def visit(e: AddExpression) : Unit
@@ -49,4 +52,6 @@ trait Visitor {
   def visit(c: While)         : Unit
   def visit(c: Print)         : Unit
   def visit(c: OberonProgram) : Unit
+  def visit(c: IfThen)        : Unit
+  def visit(c: IfThenElse)    : Unit
 }

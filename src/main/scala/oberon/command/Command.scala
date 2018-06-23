@@ -48,12 +48,12 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
 
   override def run(): Unit = {
 
-    val runLoop = new IntExpression(i,range).eqq
+    val runLoop = new EqExpression(i,range)
 
     runLoop.eval() match {
       case BoolValue(false) => {
         command.run()
-        new For(new IntExpression(i,IntValue(1)).add, range, command).run()
+        new For(new AddExpression(i,IntValue(1)), range, command).run()
       }
       case _ =>
     }
@@ -64,7 +64,7 @@ class IfThen(val cond: Expression, val command : Command = new BlockCommand(List
       val value = cond.eval().asInstanceOf[BoolValue]
 
       value match{
-        case BoolValue(true) => command.run()
+        case BoolValue(true)  => command.run()
         case BoolValue(false) =>
       }
   }
