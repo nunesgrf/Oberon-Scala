@@ -1,6 +1,7 @@
 package oberon
 
 import oberon.command.Command
+import oberon.visitor.Visitor
 
 class OberonProgram(val cmd: Command) extends Command {
 
@@ -9,4 +10,7 @@ class OberonProgram(val cmd: Command) extends Command {
     cmd.run()
   }
 
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }

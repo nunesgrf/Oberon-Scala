@@ -54,4 +54,7 @@ trait Visitor {
   def visit(c: OberonProgram) : Unit
   def visit(c: IfThen)        : Unit
   def visit(c: IfThenElse)    : Unit
+  def visit(c: DecVar)        : Unit
+  def visit(c: For)           : Unit
+  def visit(c: ProcedureCall) : Unit
 }

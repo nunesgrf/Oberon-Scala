@@ -9,7 +9,7 @@ class TestDecVar extends FlatSpec with Matchers with GivenWhenThen with BeforeAn
 
   behavior of "Declaration of variables"
 
-  it should "Create an IntValue(0) with name: variable" in {
+  it should "Create an uninitialized variable named variable " in {
     val test = new DecVar("int","variable")
     test.run()
     new VarRef("variable").eval() should be (Uninitialized())

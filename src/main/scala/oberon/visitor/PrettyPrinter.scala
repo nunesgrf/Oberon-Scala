@@ -19,14 +19,13 @@ class PrettyPrinter extends Visitor {
   var str = ""
 
   // Private definitions
-  private def visitExp(e: Expression)         : String = {
+  private def visitExp(e: Expression)       : String          = {
     e.accept(this)
     val string = str
 
     string
   }
-
-  private def visitBinExp(e: BinExpression) : (String, String) = {
+  private def visitBinExp(e: BinExpression) :(String, String) = {
     e.lhs.accept(this)
     val l = str
 
@@ -35,9 +34,19 @@ class PrettyPrinter extends Visitor {
 
     (l, r)
   }
+  private def visitCommand(c: Command)      : String          = {
+    c.accept(this)
+    val string = str
+
+    string
+  }
+  private def f(a: Command)                 : String          = {
+    val string = " " + visitCommand(a) + "\n"
+    string
+  }
 
   // Values
-  def visit(e: Undefined)     : Unit = { str = "Undefined" }
+  def visit(e: Undefined)     : Unit = { str = "Undefined"      }
   def visit(e: IntValue)      : Unit = { str = e.value.toString }
   def visit(e: BoolValue)     : Unit = { str = e.value.toString }
   def visit(e: Return)        : Unit = { str = e.value.toString }
@@ -104,25 +113,74 @@ class PrettyPrinter extends Visitor {
   }
 
   // Commands
-  def visit(e: VarRef)        : Unit = { }
-  def visit(c: BlockCommand)  : Unit = { }
-  def visit(c: Assignment)    : Unit = { }
-  def visit(c: While)         : Unit = { }
-  def visit(c: Print)         : Unit = { }
-  def visit(c: OberonProgram) : Unit = { }
+  def visit(e: VarRef)        : Unit = {
+    str = e.id
+  }
+
+  // TODO: BlockCommand com problemas
+  def visit(c: BlockCommand)  : Unit = {
+    println(c.cmds.length)
+    println("hey")
+    c.cmds.foreach(a => str += f(a))
+  }
+  def visit(c: Assignment)    : Unit = {
+    val a = visitExp(c.expression)
+
+    str = c.id + " = " + a
+  }
+  def visit(c: While)         : Unit = {
+    val cond = visitExp(c.cond)
+    val command = visitCommand(c.command)
+
+    str = "While(" + cond + "):" + "\n" +
+          "\t" + command
+  }
+  def visit(c: Print)         : Unit = {
+    val a = visitExp(c.exp)
+
+    str = "Print(" + a + ")"
+  }
   def visit(c: IfThen)        : Unit = {
     val cond = visitExp(c.cond)
+    val ifCommand = visitCommand(c.command)
 
     str = "if(" + cond + "):\n \t" +
-            c.command
+              ifCommand
   }
   def visit(c: IfThenElse)    : Unit = {
 
     val cond = visitExp(c.cond)
+    val ifCommand = visitCommand(c.ifCommand)
 
+    val elseCommand = visitCommand(c.elseCommand)
     str = "if(" + cond + "):\n \t" +
-              c.ifCommand + "\n" +
+              ifCommand + "\n" +
           "else:\n \t" +
-              c.elseCommand
+              elseCommand
   }
+  def visit(c: For)           : Unit = {
+    val command = visitCommand(c.command)
+    val i = visitExp(c.i)
+    val range = visitExp(c.range)
+
+    str = "For(i <- " + i + " to " + range + "): \n \t" + command
+
+
+  }
+  def visit(c: DecVar)        : Unit = {
+    str = c.datatype + " " + c.name
+  }
+  def visit(c: ProcedureCall) : Unit = {
+
+    val procedure_name = c.id
+    str = procedure_name + "("
+
+    for(i <- c.param.indices) {
+      str += visitExp(c.param(i))
+      if(i == c.param.length - 1) str += ")"
+      else str += ","
+    }
+  }
+
+  def visit(c: OberonProgram) : Unit = { }
 }

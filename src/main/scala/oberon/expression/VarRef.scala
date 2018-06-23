@@ -3,7 +3,7 @@ package oberon.expression
 import oberon.Environment.lookup
 import oberon.visitor.Visitor
 
-class VarRef(id: String) extends Expression {
+case class VarRef(id: String) extends Expression {
 
   def eval(): Value = {
 

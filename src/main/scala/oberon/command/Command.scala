@@ -2,8 +2,9 @@ package oberon.command
 
 import oberon.Environment._
 import oberon.expression._
+import oberon.visitor.{Visitable, Visitor}
 
-trait Command {
+trait Command extends Visitable{
   def run() : Unit 
 }
 
@@ -12,6 +13,10 @@ class BlockCommand(val cmds: List[Command]) extends Command {
   override
   def run() : Unit = {
     cmds.foreach(c => c.run())
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
   }
 }
 
@@ -22,6 +27,9 @@ class Assignment(val id: String, val expression: Expression) extends Command {
     map(id, expression.eval())
   }
 
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }
 
 class While(val cond: Expression, val command: Command) extends Command {
@@ -34,6 +42,10 @@ class While(val cond: Expression, val command: Command) extends Command {
       case _               =>
     }
   }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }
 
 class Print(val exp: Expression) extends Command {
@@ -42,6 +54,9 @@ class Print(val exp: Expression) extends Command {
     println(exp.eval())
   }
 
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }
 
 class For(val i: Expression, val range: Expression, val command: Command = new BlockCommand(List())) extends Command {
@@ -58,6 +73,10 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
       case _ =>
     }
   }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }
 class IfThen(val cond: Expression, val command : Command = new BlockCommand(List())) extends Command{
    override def run(): Unit ={
@@ -67,6 +86,10 @@ class IfThen(val cond: Expression, val command : Command = new BlockCommand(List
         case BoolValue(true)  => command.run()
         case BoolValue(false) =>
       }
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
   }
 }
 class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockCommand(List()), val elseCommand : Command= new BlockCommand(List())) extends Command {
@@ -78,16 +101,19 @@ class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockComma
       case BoolValue(false) => elseCommand.run()
     }
   }
+
+  def accept(v : Visitor) {
+    v.visit(this)
+  }
 }
 
 // TODO: Verificar se a classe DecVar é realmente necessária.
-class DecVar(val datatype: String, val name: String) extends Command {
+class DecVar(val datatype: String, val name: String, val value: Value = Uninitialized()) extends Command {
   def run(): Unit = {
+    Variable(datatype,name,value)
+  }
 
-    datatype match {
-      case "int"  => new Assignment(name, Uninitialized()).run()
-      case "bool" => new Assignment(name, Uninitialized()).run()
-      case _      =>
-    }
+  def accept(v : Visitor) {
+    v.visit(this)
   }
 }

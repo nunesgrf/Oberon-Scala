@@ -2,6 +2,7 @@ package oberon.expression
 import oberon.expression._
 import oberon.command._
 import oberon.defEnvironment._
+import oberon.visitor.Visitor
 
 case class DecProcedure(id : String, blockcmd : Command = new BlockCommand(List()), args: List[Variable] ) extends defTrait {
 
@@ -40,5 +41,9 @@ case class ProcedureCall(id: String, param: List[Value]) extends Command with Pr
         if(procedure.verify(param)) this.exe(procedure)
         else println("Argumentos não condizem com o procedimento")
     }
+  }
+
+  def accept(v : Visitor) {
+    v.visit(this)
   }
 }
