@@ -41,7 +41,11 @@ class PrettyPrinter extends Visitor {
     string
   }
   private def f(a: Command)                 : String          = {
-    val string = " " + visitCommand(a) + "\n"
+    val string = "\t" + visitCommand(a) + "\n"
+    string
+  }
+  private def TabCommand(s: String)         : String          = {
+    val string = "\t" + s
     string
   }
 
@@ -118,8 +122,7 @@ class PrettyPrinter extends Visitor {
   }
   // TODO: BlockCommand com problemas
   def visit(c: BlockCommand)  : Unit = {
-    println(c.cmds.length)
-    println("hey")
+    str = ""
     c.cmds.foreach(a => str += f(a))
   }
   def visit(c: Assignment)    : Unit = {
@@ -132,7 +135,7 @@ class PrettyPrinter extends Visitor {
     val command = visitCommand(c.command)
 
     str = "While(" + cond + "):" + "\n" +
-          "\t" + command
+          command
   }
   def visit(c: Print)         : Unit = {
     val a = visitExp(c.exp)
@@ -143,7 +146,7 @@ class PrettyPrinter extends Visitor {
     val cond = visitExp(c.cond)
     val ifCommand = visitCommand(c.command)
 
-    str = "if(" + cond + "):\n \t" +
+    str = "if(" + cond + "):\n" +
               ifCommand
   }
   def visit(c: IfThenElse)    : Unit = {
@@ -152,9 +155,9 @@ class PrettyPrinter extends Visitor {
     val ifCommand = visitCommand(c.ifCommand)
 
     val elseCommand = visitCommand(c.elseCommand)
-    str = "if(" + cond + "):\n \t" +
+    str = "if(" + cond + "):\n"+
               ifCommand + "\n" +
-          "else:\n \t" +
+          "else:\n" +
               elseCommand
   }
   def visit(c: For)           : Unit = {
@@ -162,7 +165,7 @@ class PrettyPrinter extends Visitor {
     val i = visitExp(c.i)
     val range = visitExp(c.range)
 
-    str = "For(i <- " + i + " to " + range + "): \n \t" + command
+    str = "For(i <- " + i + " to " + range + "): \n" + command
 
 
   }
