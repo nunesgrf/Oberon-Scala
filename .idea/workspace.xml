@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="153e309b-60c5-4626-9111-3dcc3a6726b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Mini linguagem de Tecnicas de Programacao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/oberon-scala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/oberon-scala-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/oberon-scala.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/Function.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/Function.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" afterDir="false" />
-    </list>
+    <list default="true" id="153e309b-60c5-4626-9111-3dcc3a6726b5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -649,7 +634,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529941282373" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529943551347" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -925,7 +910,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Learn" order="1" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
@@ -936,7 +921,7 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.3608087" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" weight="0.3608087" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
