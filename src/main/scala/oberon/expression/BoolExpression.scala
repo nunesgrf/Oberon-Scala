@@ -15,6 +15,14 @@ class OrExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,r
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def calculateType() : Type = {
+    val t1 = lhs.calculateType()
+    val t2 = rhs.calculateType()
+
+    if(t1 == TBool() && t2 == TBool()) TBool()
+    else TUndefined()
+  }
 }
 
 class AndExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,rhs) {
@@ -29,6 +37,14 @@ class AndExpression(lhs: Expression, rhs: Expression) extends BinExpression(lhs,
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def calculateType() : Type = {
+    val t1 = lhs.calculateType()
+    val t2 = rhs.calculateType()
+
+    if(t1 == TBool() && t2 == TBool()) TBool()
+    else TUndefined()
+  }
 }
 
 case class NotExpression(v: Expression) extends Expression {
@@ -42,4 +58,6 @@ case class NotExpression(v: Expression) extends Expression {
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def calculateType() : Type = v.calculateType()
 }

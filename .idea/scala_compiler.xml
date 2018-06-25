@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="oberon-scala_4873,Mini linguagem de Tecnicas de Programacao,oberon-scala" />
+    <profile name="sbt 1" modules="oberon-scala_4873,oberon-scala,Mini linguagem de Tecnicas de Programacao" />
   </component>
 </project>

@@ -5,7 +5,8 @@ import oberon.expression._
 import oberon.visitor.{Visitable, Visitor}
 
 trait Command extends Visitable{
-  def run() : Unit 
+  def run() : Unit
+  def tc() : Boolean // a type checker for commands.
 }
 
 class BlockCommand(val cmds: List[Command]) extends Command {
@@ -18,18 +19,23 @@ class BlockCommand(val cmds: List[Command]) extends Command {
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def tc(): Boolean = cmds.forall(c => c.tc())
 }
 
 class Assignment(val id: String, val expression: Expression) extends Command {
 
   override
   def run() : Unit = {
+
+
     map(id, expression.eval())
   }
 
   def accept(v : Visitor) {
     v.visit(this)
   }
+  def tc(): Boolean = expression.typeCheck()
 }
 
 class While(val cond: Expression, val command: Command) extends Command {
@@ -46,6 +52,7 @@ class While(val cond: Expression, val command: Command) extends Command {
   def accept(v : Visitor) {
     v.visit(this)
   }
+  def tc(): Boolean = command.tc() && cond.calculateType() == TBool()
 }
 
 class Print(val exp: Expression) extends Command {
@@ -57,6 +64,7 @@ class Print(val exp: Expression) extends Command {
   def accept(v : Visitor) {
     v.visit(this)
   }
+  def tc(): Boolean = true
 }
 
 class For(val i: Expression, val range: Expression, val command: Command = new BlockCommand(List())) extends Command {
@@ -77,6 +85,8 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def tc(): Boolean = i.calculateType() == TInt() && range.calculateType() == TInt() && command.tc()
 }
 class IfThen(val cond: Expression, val command : Command = new BlockCommand(List())) extends Command{
    override def run(): Unit ={
@@ -91,6 +101,8 @@ class IfThen(val cond: Expression, val command : Command = new BlockCommand(List
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def tc(): Boolean = cond.calculateType() == TBool() && command.tc()
 }
 class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockCommand(List()), val elseCommand : Command= new BlockCommand(List())) extends Command {
   override def run(): Unit ={
@@ -105,6 +117,8 @@ class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockComma
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def tc(): Boolean = cond.calculateType() == TBool() && ifCommand.tc() && elseCommand.tc()
 }
 
 // TODO: Verificar se a classe DecVar é realmente necessária.
@@ -116,4 +130,5 @@ class DecVar(val datatype: String, val name: String, val value: Value = Uninitia
   def accept(v : Visitor) {
     v.visit(this)
   }
+  def tc(): Boolean = true
 }

@@ -47,4 +47,13 @@ case class ProcedureCall(id: String, param: List[Value]) extends Command with Pr
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def tc(): Boolean = {
+    /*lookup(id) match {
+      case None => false
+      case Some(procedure) => procedure.
+    }*/
+    true
+  }
+
 }

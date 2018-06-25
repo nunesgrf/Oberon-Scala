@@ -13,4 +13,6 @@ class OberonProgram(val cmd: Command) extends Command {
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def tc(): Boolean = true
 }

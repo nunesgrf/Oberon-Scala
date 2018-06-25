@@ -64,4 +64,6 @@ case class CallFunction(id : String, param : List[Value]) extends Command {
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def tc(): Boolean = true
 }

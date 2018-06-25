@@ -16,5 +16,13 @@ case class VarRef(id: String) extends Expression {
   def accept(v : Visitor) {
     v.visit(this)
   }
+
+  def calculateType() : Type = {
+
+    lookup(id) match {
+      case Some(a) => a.calculateType()
+      case _       => TUndefined()
+    }
+  }
 }
 
