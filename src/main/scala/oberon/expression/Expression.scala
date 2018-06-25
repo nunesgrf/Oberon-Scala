@@ -31,8 +31,3 @@ case class BoolValue(value: Boolean) extends Value {
     v.visit(this)
   }
 }
-case class Return(value: Value) extends Value {
-  def accept(v : Visitor) {
-    v.visit(this)
-  }
-}

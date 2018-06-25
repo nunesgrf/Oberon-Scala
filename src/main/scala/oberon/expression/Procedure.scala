@@ -1,4 +1,5 @@
 package oberon.expression
+import oberon.InvalidArgument
 import oberon.expression._
 import oberon.command._
 import oberon.defEnvironment._
@@ -36,10 +37,10 @@ case class ProcedureCall(id: String, param: List[Value]) extends Command with Pr
 
   def run(): Unit = {
     lookup(id) match {
-      case None            =>  println("Não existe tal função")
+      case None            =>  throw InvalidArgument("Não existe tal procedimento")
       case Some(procedure) =>
         if(procedure.verify(param)) this.exe(procedure)
-        else println("Argumentos não condizem com o procedimento")
+        else throw InvalidArgument("Argumentos não condizem com o procedimento")
     }
   }
 

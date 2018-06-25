@@ -53,7 +53,6 @@ class PrettyPrinter extends Visitor {
   def visit(e: Undefined)     : Unit = { str = "Undefined"      }
   def visit(e: IntValue)      : Unit = { str = e.value.toString }
   def visit(e: BoolValue)     : Unit = { str = e.value.toString }
-  def visit(e: Return)        : Unit = { str = e.value.toString }
   def visit(e: Uninitialized) : Unit = { str = "Uninitialized"  }
 
   // IntExpression
@@ -179,6 +178,15 @@ class PrettyPrinter extends Visitor {
 
     for(i <- c.param.indices) {
       str += visitExp(c.param(i))
+      if(i == c.param.length - 1) str += ")"
+      else str += ","
+    }
+  }
+  def visit(c: CallFunction) : Unit = {
+    val functName = c.id
+    str = functName + "("
+    for(i <- c.param.indices){
+      str+=  visitExp(c.param(i))
       if(i == c.param.length - 1) str += ")"
       else str += ","
     }

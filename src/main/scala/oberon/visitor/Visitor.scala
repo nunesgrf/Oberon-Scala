@@ -26,7 +26,6 @@ trait Visitor {
   def visit(e: IntValue)      : Unit
   def visit(e: BoolValue)     : Unit
   def visit(e: VarRef)        : Unit
-  def visit(e: Return)        : Unit
 
   // IntExpression
   def visit(e: AddExpression) : Unit
@@ -57,4 +56,5 @@ trait Visitor {
   def visit(c: DecVar)        : Unit
   def visit(c: For)           : Unit
   def visit(c: ProcedureCall) : Unit
+  def visit(c: CallFunction)  : Unit
 }

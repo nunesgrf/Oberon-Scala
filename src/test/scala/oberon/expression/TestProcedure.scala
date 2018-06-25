@@ -1,14 +1,8 @@
-package oberon
+package oberon.expression
 
-import oberon.command.{BlockCommand, While}
-import org.scalatest.FlatSpec
-import org.scalatest.Matchers
-import org.scalatest.GivenWhenThen
-import org.scalatest.BeforeAndAfter
-import oberon.expression._
-import oberon.expression.Variable
+import oberon.command.BlockCommand
 import oberon.defEnvironment._
-import oberon.command._
+import org.scalatest.{BeforeAndAfter, FlatSpec, GivenWhenThen, Matchers}
 
 class TestProcedure extends FlatSpec with Matchers with GivenWhenThen with BeforeAndAfter {
 
