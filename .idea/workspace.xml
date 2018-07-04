@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="153e309b-60c5-4626-9111-3dcc3a6726b5" name="Default" comment="" />
+    <list default="true" id="153e309b-60c5-4626-9111-3dcc3a6726b5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Mini linguagem de Tecnicas de Programacao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Mini linguagem de Tecnicas de Programacao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -20,87 +28,41 @@
     <session id="-809824860">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scala" value="134" />
+          <entry key="md" value="1" />
+          <entry key="scala" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Scala" value="134" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Scala" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="19200" />
+          <entry key="scala" value="21366" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="19200" />
+          <entry key="Scala" value="21366" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Function.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-              <folding>
-                <element signature="e#27#84#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="238" column="3" lean-forward="true" selection-start-line="238" selection-start-column="3" selection-end-line="238" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-              <folding>
-                <element signature="e#27#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-              <folding>
-                <element signature="e#26#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="675">
+              <caret line="45" column="17" selection-start-line="45" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -108,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="132" column="26" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
+            <state relative-caret-position="278">
+              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
               <folding>
                 <element signature="e#24#51#0" expanded="true" />
               </folding>
@@ -118,19 +80,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/defTrait.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            <state relative-caret-position="39">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Variable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="300">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="25" column="117" selection-start-line="25" selection-start-column="117" selection-end-line="25" selection-end-column="117" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="186" column="25" lean-forward="true" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
+              <folding>
+                <element signature="e#24#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -213,21 +226,22 @@
         <option value="$PROJECT_DIR$/src/test/scala/oberon/expression/TestAddExpression.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/expression/TestAndExpression.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/InvalidArgument.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestFunction.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Variable.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestWhile.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Function.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala" />
       </list>
     </option>
   </component>
@@ -255,301 +269,301 @@
   </component>
   <component name="ProjectUserFactors">
     <factor id="binaryFeature:liftShorter">
-      <dailyData date="25-6-2018">
-        <observation name="false" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="false" value="152,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
-      <dailyData date="25-6-2018">
-        <observation name="false" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="false" value="152,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="false" value="36,0" />
-        <observation name="true" value="64,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="false" value="50,0" />
+        <observation name="true" value="100,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="false" value="49,0" />
-        <observation name="true" value="51,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="false" value="72,0" />
+        <observation name="true" value="78,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="false" value="59,0" />
-        <observation name="true" value="41,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="false" value="123,0" />
+        <observation name="true" value="27,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="false" value="47,0" />
-        <observation name="true" value="53,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="false" value="69,0" />
+        <observation name="true" value="81,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="false" value="100,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="false" value="150,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
-      <dailyData date="25-6-2018">
-        <observation name="false" value="101,0" />
-        <observation name="true" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:accessible">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:expectedType">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:kind">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="unknown" value="100,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_javaInheritance">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="false" value="32,0" />
-        <observation name="null" value="67,0" />
+      <dailyData date="4-7-2018">
+        <observation name="false" value="151,0" />
         <observation name="true" value="1,0" />
       </dailyData>
     </factor>
+    <factor id="categoricalFeature:accessible">
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:expectedType">
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:kind">
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="unknown" value="150,0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:prox_javaInheritance">
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="false" value="49,0" />
+        <observation name="null" value="101,0" />
+      </dailyData>
+    </factor>
     <factor id="categoricalFeature:prox_referenceList">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="unknown" value="100,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="unknown" value="150,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
-      <dailyData date="25-6-2018">
-        <observation name="cancelled" value="120,0" />
-        <observation name="explicitSelect" value="21,0" />
-        <observation name="typedSelect" value="82,0" />
+      <dailyData date="4-7-2018">
+        <observation name="cancelled" value="367,0" />
+        <observation name="explicitSelect" value="34,0" />
+        <observation name="typedSelect" value="118,0" />
       </dailyData>
     </factor>
     <factor id="completionType">
-      <dailyData date="25-6-2018">
-        <observation name="BASIC" value="157,0" />
+      <dailyData date="4-7-2018">
+        <observation name="BASIC" value="231,0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
-      <dailyData date="25-6-2018">
-        <observation name="count" value="223,0" />
+      <dailyData date="4-7-2018">
+        <observation name="count" value="519,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
-      <dailyData date="25-6-2018">
+      <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="205,0" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:grouping">
-      <dailyData date="25-6-2018">
+      <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="205,0" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:mostUsed">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
-      <dailyData date="25-6-2018">
-        <observation name="average" value="0,009756" />
-        <observation name="count" value="205,0" />
-        <observation name="max" value="1,0" />
+      <dailyData date="4-7-2018">
+        <observation name="average" value="0,052805" />
+        <observation name="count" value="303,0" />
+        <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,005228" />
+        <observation name="variance" value="0,069785" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
-      <dailyData date="25-6-2018">
-        <observation name="average" value="-822,57561" />
-        <observation name="count" value="205,0" />
+      <dailyData date="4-7-2018">
+        <observation name="average" value="-753,547855" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="0,0" />
-        <observation name="min" value="-1153,0" />
-        <observation name="variance" value="223558,797693" />
+        <observation name="min" value="-1202,0" />
+        <observation name="variance" value="233360,763421" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
-      <dailyData date="25-6-2018">
+      <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="205,0" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="average" value="113,567839" />
-        <observation name="count" value="199,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="average" value="54,849498" />
+        <observation name="count" value="299,0" />
         <observation name="max" value="300,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="16225,509194" />
+        <observation name="variance" value="8607,4833" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
         <observation name="average" value="0,0" />
-        <observation name="count" value="199,0" />
+        <observation name="count" value="299,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="average" value="1,135678" />
-        <observation name="count" value="199,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="average" value="1,09699" />
+        <observation name="count" value="299,0" />
         <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,846505" />
+        <observation name="variance" value="0,86327" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="3,0" />
-        <observation name="average" value="0,180905" />
-        <observation name="count" value="199,0" />
-        <observation name="max" value="1,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="2,0" />
+        <observation name="average" value="0,227425" />
+        <observation name="count" value="299,0" />
+        <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,141396" />
+        <observation name="variance" value="0,189255" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
-      <dailyData date="25-6-2018">
+      <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="205,0" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:result_length">
-      <dailyData date="25-6-2018">
-        <observation name="average" value="5,721951" />
-        <observation name="count" value="205,0" />
+      <dailyData date="4-7-2018">
+        <observation name="average" value="5,805281" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="52,0" />
         <observation name="min" value="1,0" />
-        <observation name="variance" value="22,711319" />
+        <observation name="variance" value="19,187811" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
-      <dailyData date="25-6-2018">
+      <dailyData date="4-7-2018">
         <observation name="average" value="1,0" />
-        <observation name="count" value="205,0" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="1,0" />
         <observation name="min" value="1,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:statics">
-      <dailyData date="25-6-2018">
-        <observation name="UNDEFINED" value="103,0" />
+      <dailyData date="4-7-2018">
+        <observation name="UNDEFINED" value="152,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
-      <dailyData date="25-6-2018">
-        <observation name="average" value="3902,204878" />
-        <observation name="count" value="205,0" />
+      <dailyData date="4-7-2018">
+        <observation name="average" value="4009,755776" />
+        <observation name="count" value="303,0" />
         <observation name="max" value="10000,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="19488295,06733" />
+        <observation name="variance" value="21331195,350816" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
-      <dailyData date="25-6-2018">
-        <observation name="0" value="20,0" />
-        <observation name="1" value="1,0" />
+      <dailyData date="4-7-2018">
+        <observation name="0" value="28,0" />
+        <observation name="1" value="4,0" />
+        <observation name="2" value="2,0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
-      <dailyData date="25-6-2018">
-        <observation name="total" value="16,0" />
-        <observation name="withMnemonics" value="0,0" />
+      <dailyData date="4-7-2018">
+        <observation name="total" value="25,0" />
+        <observation name="withMnemonics" value="3,0" />
       </dailyData>
     </factor>
     <factor id="prefixLength">
-      <dailyData date="25-6-2018">
-        <observation name="0" value="4,0" />
-        <observation name="1" value="1,0" />
-        <observation name="2" value="4,0" />
-        <observation name="3" value="2,0" />
-        <observation name="4" value="6,0" />
-        <observation name="5" value="1,0" />
-        <observation name="6" value="1,0" />
-        <observation name="7" value="2,0" />
+      <dailyData date="4-7-2018">
+        <observation name="0" value="7,0" />
+        <observation name="1" value="2,0" />
+        <observation name="12" value="1,0" />
+        <observation name="2" value="5,0" />
+        <observation name="3" value="5,0" />
+        <observation name="4" value="7,0" />
+        <observation name="5" value="2,0" />
+        <observation name="6" value="5,0" />
       </dailyData>
     </factor>
     <factor id="timeBetweenTyping">
-      <dailyData date="25-6-2018">
-        <observation name="average" value="219,265233" />
-        <observation name="count" value="279,0" />
+      <dailyData date="4-7-2018">
+        <observation name="average" value="152,303327" />
+        <observation name="count" value="511,0" />
       </dailyData>
     </factor>
   </component>
@@ -558,7 +572,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -614,6 +628,15 @@
               <item name="Mini linguagem de Tecnicas de Programacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="Oberon-Scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="oberon" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mini linguagem de Tecnicas de Programacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oberon-Scala" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -627,14 +650,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529943551347" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530745751113" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -672,6 +695,15 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
+      <module name="Mini linguagem de Tecnicas de Programacao" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -723,24 +755,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFunction.a function should rodando a funçao" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="oberon-scala" />
-      <setting name="path" value="oberon.command.TestFunction" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="oberon.command.TestFunction" />
-      <setting name="testName" value="a function should rodando a funçao" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestFunction.a function should verificar se a funcao esta salva&#10;a function should rodando a funçao" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="oberon-scala" />
       <setting name="path" value="oberon.command.TestFunction" />
@@ -787,18 +801,18 @@
     </configuration>
     <list>
       <item itemvalue="ScalaTest.TestFunction.a function should verificar se a funcao esta salva&#10;a function should rodando a funçao" />
-      <item itemvalue="ScalaTest.TestFunction.a function should rodando a funçao" />
       <item itemvalue="ScalaTest.TestWhile" />
       <item itemvalue="ScalaTest.ScalaTests in 'oberon'" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Scala Console.Scala Console" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Scala Console.Scala Console" />
         <item itemvalue="ScalaTest.ScalaTests in 'oberon'" />
         <item itemvalue="ScalaTest.TestWhile" />
         <item itemvalue="ScalaTest.TestFunction.a function should verificar se a funcao esta salva&#10;a function should rodando a funçao" />
-        <item itemvalue="ScalaTest.TestFunction.a function should rodando a funçao" />
       </list>
     </recent_temporary>
   </component>
@@ -909,8 +923,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
       <window_info id="Learn" order="1" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
@@ -921,7 +936,7 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" weight="0.3608087" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.3608087" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1086,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Variable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/Environment.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
@@ -1115,16 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/oberon/command/TestDecVar.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1132,32 +1130,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Function.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+        <state relative-caret-position="474">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding>
-            <element signature="e#24#58#0" expanded="true" />
+            <element signature="e#27#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        <state relative-caret-position="360">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
-            <element signature="e#24#58#0" expanded="true" />
-            <element signature="e#461#605#0" />
-            <element signature="e#608#766#0" />
+            <element signature="e#27#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="765">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+          <folding>
+            <element signature="e#26#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,6 +1167,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3570">
+          <caret line="238" column="3" selection-start-line="238" selection-start-column="3" selection-end-line="238" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="17" selection-start-line="45" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1175,63 +1195,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <element signature="e#27#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
-          <caret line="238" column="3" lean-forward="true" selection-start-line="238" selection-start-column="3" selection-end-line="238" selection-end-column="3" />
+          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        <state relative-caret-position="39">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="132" column="26" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
+        <state relative-caret-position="278">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
             <element signature="e#24#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Variable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="186" column="25" lean-forward="true" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="25" column="117" selection-start-line="25" selection-start-column="117" selection-end-line="25" selection-end-column="117" />
           <folding>
-            <element signature="e#26#55#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Function.scala">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        <state relative-caret-position="105">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
           <folding>
-            <element signature="e#27#84#0" expanded="true" />
+            <element signature="e#24#53#0" expanded="true" />
           </folding>
         </state>
       </provider>

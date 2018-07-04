@@ -7,11 +7,27 @@ object Main extends App {
   val test = new PrettyPrinter
 
   val cond = new EqExpression(IntValue(2),IntValue(2))
-  val ifelsecomand = new BlockCommand(List(new Print(IntValue(2)), new Print(IntValue(4))))
-  val ifThenElse = new For(cond,IntValue(2),ifelsecomand)
+  val list = List(new Assignment("a",IntValue(3)),new Assignment("b",IntValue(4)))
+  val ifcommand = new BlockCommand(list)
+  val elsecommand = new BlockCommand(list)
 
-  val whilecommand = new BlockCommand(List(ifThenElse))
-  test.visit(ifThenElse)
+  val ifThenElse = new IfThenElse(cond,ifcommand,elsecommand)
 
+
+  val whilecommand: Command = new BlockCommand(List(ifThenElse))
+  val While = new While(cond,whilecommand)
+
+  test.visit(While)
   println(test.str)
+
+  println("--------------------------------------------------")
+
+  val refact = new Refact
+  val tste = new IfThenElse(new EqExpression(IntValue(3),IntValue(3)), Return(BoolValue(true)),Return(BoolValue(false)))
+  test.visit(tste)
+  println(test.str)
+  val tste2 = refact.visit(tste)
+  test.visit(tste2)
+  println(test.str)
+
 }

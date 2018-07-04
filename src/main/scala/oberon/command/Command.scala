@@ -9,6 +9,14 @@ trait Command extends Visitable{
   def tc() : Boolean // a type checker for commands.
 }
 
+case class Return(value: Expression) extends Command {
+  def run(): Unit = {}
+  def accept(v: Visitor): Unit = {
+    v.visit(this)
+  }
+  def tc(): Boolean = true
+}
+
 class BlockCommand(val cmds: List[Command]) extends Command {
 
   override

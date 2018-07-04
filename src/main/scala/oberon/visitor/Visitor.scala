@@ -57,4 +57,5 @@ trait Visitor {
   def visit(c: For)           : Unit
   def visit(c: ProcedureCall) : Unit
   def visit(c: CallFunction)  : Unit
+  def visit(c: Return)        : Unit
 }
