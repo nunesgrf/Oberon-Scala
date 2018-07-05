@@ -6,6 +6,7 @@ import oberon.expression.BoolValue
 import oberon.expression.VarRef
 import oberon.expression.BinExpression
 import oberon.expression._
+import oberon.expression.AddExpression
 
 import oberon.command.BlockCommand
 import oberon.command.Assignment
@@ -198,5 +199,10 @@ class PrettyPrinter extends Visitor {
   def visit(c: Return)        : Unit = {
     val value = visitExp(c.value)
     str = "return " + value
+  }
+
+  def visit(b: BinExpression) : Unit = {
+
+
   }
 }

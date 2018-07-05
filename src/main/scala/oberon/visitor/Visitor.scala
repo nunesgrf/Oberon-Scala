@@ -58,4 +58,6 @@ trait Visitor {
   def visit(c: ProcedureCall) : Unit
   def visit(c: CallFunction)  : Unit
   def visit(c: Return)        : Unit
+
+  def visit(b: BinExpression) : Unit
 }

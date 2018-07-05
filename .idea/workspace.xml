@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153e309b-60c5-4626-9111-3dcc3a6726b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -26,23 +26,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="scala" value="140" />
+          <entry key="scala" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Scala" value="140" />
+          <entry key="Scala" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="23467" />
+          <entry key="scala" value="24784" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="23467" />
+          <entry key="Scala" value="24784" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -56,10 +56,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="17" selection-start-line="45" selection-end-line="46" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="247" column="1" lean-forward="true" selection-start-line="247" selection-start-column="1" selection-end-line="247" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -67,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="365">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#24#51#0" expanded="true" />
               </folding>
@@ -94,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="615">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -118,17 +127,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="197" column="40" lean-forward="true" selection-start-line="197" selection-start-column="40" selection-end-line="197" selection-end-column="40" />
+            <state relative-caret-position="2671">
+              <caret line="204" selection-start-line="204" selection-end-line="204" />
+              <folding>
+                <element signature="e#24#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+            <state relative-caret-position="-909">
+              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="e#24#70#0" expanded="true" />
               </folding>
@@ -137,10 +149,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="219">
+              <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -204,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/defTrait.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/expression/TestVariable.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/TestProcedure.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThen.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/command/TestIfThenElse.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/oberon/expression/TestNotExpression.scala" />
@@ -221,14 +232,15 @@
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/OberonProgram.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/VarRef.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Procedure.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/Function.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala" />
       </list>
     </option>
@@ -258,125 +270,127 @@
   <component name="ProjectUserFactors">
     <factor id="binaryFeature:liftShorter">
       <dailyData date="4-7-2018">
-        <observation name="false" value="337,0" />
+        <observation name="false" value="490,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
       <dailyData date="4-7-2018">
-        <observation name="false" value="337,0" />
+        <observation name="false" value="489,0" />
+        <observation name="true" value="1,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="103,0" />
-        <observation name="true" value="230,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="false" value="153,0" />
+        <observation name="true" value="332,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="182,0" />
-        <observation name="true" value="151,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="false" value="257,0" />
+        <observation name="true" value="228,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="276,0" />
-        <observation name="true" value="57,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="false" value="383,0" />
+        <observation name="true" value="102,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="157,0" />
-        <observation name="true" value="176,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="false" value="218,0" />
+        <observation name="true" value="267,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="332,0" />
-        <observation name="true" value="1,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="false" value="482,0" />
+        <observation name="true" value="3,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
       <dailyData date="4-7-2018">
-        <observation name="false" value="336,0" />
+        <observation name="false" value="489,0" />
         <observation name="true" value="1,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="unknown" value="333,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="unknown" value="485,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="137,0" />
-        <observation name="null" value="196,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="false" value="169,0" />
+        <observation name="null" value="315,0" />
+        <observation name="true" value="1,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="unknown" value="333,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="unknown" value="485,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
       <dailyData date="4-7-2018">
-        <observation name="cancelled" value="663,0" />
-        <observation name="explicitSelect" value="90,0" />
-        <observation name="typedSelect" value="247,0" />
+        <observation name="cancelled" value="943,0" />
+        <observation name="explicitSelect" value="155,0" />
+        <observation name="typedSelect" value="335,0" />
       </dailyData>
     </factor>
     <factor id="completionType">
       <dailyData date="4-7-2018">
-        <observation name="BASIC" value="553,0" />
+        <observation name="BASIC" value="821,0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
       <dailyData date="4-7-2018">
-        <observation name="count" value="1000,0" />
+        <observation name="count" value="1433,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
       <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="673,0" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -385,7 +399,7 @@
     <factor id="doubleFeature:grouping">
       <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="673,0" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -393,36 +407,36 @@
     </factor>
     <factor id="doubleFeature:mostUsed">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
       <dailyData date="4-7-2018">
-        <observation name="average" value="0,056464" />
-        <observation name="count" value="673,0" />
-        <observation name="max" value="4,0" />
+        <observation name="average" value="0,098059" />
+        <observation name="count" value="979,0" />
+        <observation name="max" value="5,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,097671" />
+        <observation name="variance" value="0,161442" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
       <dailyData date="4-7-2018">
-        <observation name="average" value="-857,187221" />
-        <observation name="count" value="673,0" />
+        <observation name="average" value="-817,073544" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="-1202,0" />
-        <observation name="variance" value="213989,511438" />
+        <observation name="variance" value="228417,157205" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
       <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="673,0" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -430,48 +444,48 @@
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="average" value="51,12782" />
-        <observation name="count" value="665,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="average" value="63,157895" />
+        <observation name="count" value="969,0" />
         <observation name="max" value="300,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="9880,37537" />
+        <observation name="variance" value="11480,018039" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="average" value="-0,003008" />
-        <observation name="count" value="665,0" />
-        <observation name="max" value="0,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="average" value="0,0" />
+        <observation name="count" value="969,0" />
+        <observation name="max" value="2,0" />
         <observation name="min" value="-1,0" />
-        <observation name="variance" value="0,001889" />
+        <observation name="variance" value="0,007477" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="average" value="1,064662" />
-        <observation name="count" value="665,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="average" value="1,122807" />
+        <observation name="count" value="969,0" />
         <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,904815" />
+        <observation name="variance" value="0,914712" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="average" value="0,198496" />
-        <observation name="count" value="665,0" />
+        <observation name="UNDEFINED" value="5,0" />
+        <observation name="average" value="0,25387" />
+        <observation name="count" value="969,0" />
         <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,19264" />
+        <observation name="variance" value="0,231788" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
       <dailyData date="4-7-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="673,0" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
@@ -479,32 +493,32 @@
     </factor>
     <factor id="doubleFeature:result_length">
       <dailyData date="4-7-2018">
-        <observation name="average" value="5,927192" />
-        <observation name="count" value="673,0" />
+        <observation name="average" value="5,839632" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="52,0" />
         <observation name="min" value="1,0" />
-        <observation name="variance" value="16,683303" />
+        <observation name="variance" value="16,160672" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
       <dailyData date="4-7-2018">
         <observation name="average" value="1,0" />
-        <observation name="count" value="673,0" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="1,0" />
         <observation name="min" value="1,0" />
         <observation name="variance" value="0,0" />
@@ -512,49 +526,52 @@
     </factor>
     <factor id="doubleFeature:statics">
       <dailyData date="4-7-2018">
-        <observation name="UNDEFINED" value="337,0" />
+        <observation name="UNDEFINED" value="490,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
       <dailyData date="4-7-2018">
-        <observation name="average" value="4814,427935" />
-        <observation name="count" value="673,0" />
+        <observation name="average" value="4796,645557" />
+        <observation name="count" value="979,0" />
         <observation name="max" value="10000,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="22623552,028038" />
+        <observation name="variance" value="22986280,94356" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
       <dailyData date="4-7-2018">
-        <observation name="0" value="78,0" />
-        <observation name="1" value="9,0" />
-        <observation name="2" value="2,0" />
+        <observation name="0" value="126,0" />
+        <observation name="1" value="20,0" />
+        <observation name="2" value="6,0" />
         <observation name="4" value="1,0" />
+        <observation name="5" value="2,0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
       <dailyData date="4-7-2018">
-        <observation name="total" value="73,0" />
-        <observation name="withMnemonics" value="3,0" />
+        <observation name="total" value="115,0" />
+        <observation name="withMnemonics" value="4,0" />
       </dailyData>
     </factor>
     <factor id="prefixLength">
       <dailyData date="4-7-2018">
-        <observation name="0" value="10,0" />
-        <observation name="1" value="7,0" />
+        <observation name="0" value="31,0" />
+        <observation name="1" value="9,0" />
         <observation name="11" value="1,0" />
         <observation name="12" value="1,0" />
-        <observation name="2" value="12,0" />
-        <observation name="3" value="27,0" />
-        <observation name="4" value="17,0" />
-        <observation name="5" value="7,0" />
-        <observation name="6" value="8,0" />
+        <observation name="2" value="19,0" />
+        <observation name="3" value="42,0" />
+        <observation name="4" value="31,0" />
+        <observation name="5" value="10,0" />
+        <observation name="6" value="9,0" />
+        <observation name="8" value="1,0" />
+        <observation name="9" value="1,0" />
       </dailyData>
     </factor>
     <factor id="timeBetweenTyping">
       <dailyData date="4-7-2018">
-        <observation name="average" value="164,416667" />
-        <observation name="count" value="1068,0" />
+        <observation name="average" value="169,019608" />
+        <observation name="count" value="1428,0" />
       </dailyData>
     </factor>
   </component>
@@ -656,7 +673,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530753739867" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530757112004" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -922,9 +939,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
       <window_info id="Learn" order="1" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
@@ -935,7 +951,7 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.3608087" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" weight="0.3608087" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -955,8 +971,8 @@
       <window_info anchor="right" id="Gradle" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="sbt" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32954547" />
-      <window_info anchor="right" id="Ant Build" order="10" weight="0.32954547" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.32954547" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.32954547" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
@@ -1201,31 +1217,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3570">
-          <caret line="238" column="3" selection-start-line="238" selection-start-column="3" selection-end-line="238" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BoolExpression.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="45" column="17" selection-start-line="45" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1236,10 +1231,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="105">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Visitor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#24#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/BinExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/IntExpression.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="247" column="1" lean-forward="true" selection-start-line="247" selection-start-column="1" selection-end-line="247" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1250,46 +1276,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/expression/Expression.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="279">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/command/Command.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
-            <element signature="e#24#51#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/PrettyPrinter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="197" column="40" lean-forward="true" selection-start-line="197" selection-start-column="40" selection-end-line="197" selection-end-column="40" />
+        <state relative-caret-position="2671">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/oberon/visitor/Refact.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        <state relative-caret-position="-909">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="e#24#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
