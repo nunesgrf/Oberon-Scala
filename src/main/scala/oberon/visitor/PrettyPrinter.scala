@@ -191,7 +191,9 @@ class PrettyPrinter extends Visitor {
       else str += ","
     }
   }
-
+  def visit(c: Command)       : Unit = {
+    visitCommand(c)
+  }
   def visit(c: OberonProgram) : Unit = { }
   def visit(c: Return)        : Unit = {
     val value = visitExp(c.value)

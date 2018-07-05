@@ -18,7 +18,6 @@ object Main extends App {
   val While = new While(cond,whilecommand)
 
   test.visit(While)
-  println(test.str)
 
   println("--------------------------------------------------")
 
@@ -26,8 +25,19 @@ object Main extends App {
   val tste = new IfThenElse(new EqExpression(IntValue(3),IntValue(3)), Return(BoolValue(true)),Return(BoolValue(false)))
   test.visit(tste)
   println(test.str)
-  val tste2 = refact.visit(tste)
-  test.visit(tste2)
+  refact.visit(tste)
+  test.visit(refact.result)
   println(test.str)
+
+  println("--------------------------------------------------")
+
+  val tste3 = new Assignment("Teste",new AddExpression(IntValue(3),IntValue(5)))
+  test.visit(tste3)
+  println(test.str)
+
+  refact.visit(tste3)
+  test.visit(refact.result)
+  println(test.str)
+
 
 }

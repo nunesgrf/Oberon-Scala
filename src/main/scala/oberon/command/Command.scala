@@ -14,7 +14,7 @@ case class Return(value: Expression) extends Command {
   def accept(v: Visitor): Unit = {
     v.visit(this)
   }
-  def tc(): Boolean = true
+  def tc(): Boolean = value.typeCheck()
 }
 
 class BlockCommand(val cmds: List[Command]) extends Command {
