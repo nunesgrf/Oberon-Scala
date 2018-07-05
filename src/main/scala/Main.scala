@@ -1,7 +1,6 @@
 import oberon.command._
 import oberon.visitor._
 import oberon.expression._
-import oberon.expression.NotExpression
 
 object Main extends App {
   val test = new PrettyPrinter
@@ -14,31 +13,37 @@ object Main extends App {
   val ifThenElse = new IfThenElse(cond,ifcommand,elsecommand)
 
   test.visit(ifThenElse)
+  println("--------------------- imprime IfThenElse ----------------------------")
   println(test.str)
 
-  println("--------------------------------------------------")
-  val While = new While(cond,ifThenElse)
-  test.visit(While)
-  println(test.str)
-  println("--------------------------------------------------")
+  println("------------------Refatoramente IfThenElse --------------------------")
 
   val refact = new Refact
+
   val tste = new IfThenElse(new EqExpression(IntValue(3),IntValue(3)), Return(BoolValue(true)),Return(BoolValue(false)))
+
+  println("Sem refatoramento: \n")
   test.visit(tste)
   println(test.str)
+  println("\n")
+  println("Com refatoramento: \n")
   refact.visit(tste)
   test.visit(refact.result)
   println(test.str)
 
-  println("--------------------------------------------------")
+  println("----------------------Refatoramento Assigment --------------------------")
 
   val tste3 = new Assignment("Teste",new AddExpression(IntValue(3),IntValue(5)))
-  test.visit(tste3)
-  println(test.str)
 
+  println("Sem refatoramento:")
+  test.visit(tste3)
+  println("\t" + test.str)
+
+  println("Com refatoramento:")
   refact.visit(tste3)
   test.visit(refact.result)
-  println(test.str)
+  println("\t" + test.str)
+  println("\n")
 
 
 }

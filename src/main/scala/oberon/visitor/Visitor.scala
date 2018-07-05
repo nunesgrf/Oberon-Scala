@@ -26,6 +26,7 @@ trait Visitor {
   def visit(e: IntValue)      : Unit
   def visit(e: BoolValue)     : Unit
   def visit(e: VarRef)        : Unit
+  def visit(e: Variable)      : Unit
 
   // IntExpression
   def visit(e: AddExpression) : Unit

@@ -122,4 +122,9 @@ class Refact extends Visitor {
   def visit(f: OberonProgram) : Unit = {
     f.cmd.accept(this)
   }
+  def visit(f: DecFunction)   : Unit = {
+  }
+  def visit(f: Variable)      : Unit = {
+    expression = f
+  }
 }
