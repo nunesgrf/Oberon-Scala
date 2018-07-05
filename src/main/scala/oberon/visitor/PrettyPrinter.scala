@@ -41,8 +41,12 @@ class PrettyPrinter extends Visitor {
 
     string
   }
-  private def f(a: Command)                 : String          = {
-    val string = "\t" + visitCommand(a)
+  private def f(a: Command, i: Int)         : String          = {
+    var string = ""
+    if(i > 0) {
+      string = "\t"
+    }
+    string += visitCommand(a)
     string
   }
   private def TabCommand(s: String)         : String          = {
@@ -120,10 +124,15 @@ class PrettyPrinter extends Visitor {
   def visit(e: VarRef)        : Unit = {
     str = e.id
   }
-  // TODO: BlockCommand com problemas
+
   def visit(c: BlockCommand)  : Unit = {
     str = ""
-    c.cmds.foreach(a => str += ( f(a) + "\n"))
+    var i = 0
+
+    for(a <- c.cmds.indices) {
+      str += f(c.cmds(a),i) + "\n"
+      i += 1
+    }
   }
   def visit(c: Assignment)    : Unit = {
     val a = visitExp(c.expression)
@@ -195,14 +204,14 @@ class PrettyPrinter extends Visitor {
   def visit(c: Command)       : Unit = {
     visitCommand(c)
   }
-  def visit(c: OberonProgram) : Unit = { }
+  def visit(c: OberonProgram) : Unit = {
+    str = ""
+    var i = 0
+
+    c.cmd.accept(this)
+  }
   def visit(c: Return)        : Unit = {
     val value = visitExp(c.value)
     str = "return " + value
-  }
-
-  def visit(b: BinExpression) : Unit = {
-
-
   }
 }

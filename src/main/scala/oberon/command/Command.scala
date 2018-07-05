@@ -96,6 +96,7 @@ class For(val i: Expression, val range: Expression, val command: Command = new B
 
   def tc(): Boolean = i.calculateType() == TInt() && range.calculateType() == TInt() && command.tc()
 }
+
 class IfThen(val cond: Expression, val command : Command = new BlockCommand(List())) extends Command{
    override def run(): Unit ={
       val value = cond.eval().asInstanceOf[BoolValue]
@@ -112,6 +113,7 @@ class IfThen(val cond: Expression, val command : Command = new BlockCommand(List
 
   def tc(): Boolean = cond.calculateType() == TBool() && command.tc()
 }
+
 class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockCommand(List()), val elseCommand : Command= new BlockCommand(List())) extends Command {
   override def run(): Unit ={
     val value = cond.eval().asInstanceOf[BoolValue]
@@ -129,7 +131,6 @@ class IfThenElse(val cond : Expression, val ifCommand : Command = new BlockComma
   def tc(): Boolean = cond.calculateType() == TBool() && ifCommand.tc() && elseCommand.tc()
 }
 
-// TODO: Verificar se a classe DecVar é realmente necessária.
 class DecVar(val datatype: String, val name: String, val value: Value = Uninitialized()) extends Command {
   def run(): Unit = {
     Variable(datatype,name,value)

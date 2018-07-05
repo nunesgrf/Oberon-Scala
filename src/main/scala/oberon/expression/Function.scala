@@ -47,6 +47,7 @@ case class DecFunction(typeFunct : String,id: String, blockcmd : BlockCommand = 
     }
   }
 }
+
 case class CallFunction(id : String, param : List[Value]) extends Command {
     private def exe(function : defTrait): Unit ={
       function.load_args(param)

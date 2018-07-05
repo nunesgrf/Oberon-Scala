@@ -13,7 +13,7 @@ class Refact extends Visitor {
     result
   }
 
-   private def refactor(f: IfThenElse): Return = {
+  private def refactor(f: IfThenElse): Return = {
       f.ifCommand match {
         case Return(BoolValue(true))  => Return(f.cond)
         case Return(BoolValue(false)) => Return(NotExpression(f.cond))
@@ -119,7 +119,7 @@ class Refact extends Visitor {
   def visit(f: VarRef)        : Unit = {
     expression = VarRef(f.id).eval()
   }
-  def visit(f: OberonProgram) : Unit = { }
-
-  def visit(b: BinExpression) : Unit = { }
+  def visit(f: OberonProgram) : Unit = {
+    f.cmd.accept(this)
+  }
 }

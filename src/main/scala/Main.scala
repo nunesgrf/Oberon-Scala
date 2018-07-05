@@ -13,12 +13,13 @@ object Main extends App {
 
   val ifThenElse = new IfThenElse(cond,ifcommand,elsecommand)
 
+  test.visit(ifThenElse)
+  println(test.str)
 
-  val whilecommand: Command = new BlockCommand(List(ifThenElse))
-  val While = new While(cond,whilecommand)
-
+  println("--------------------------------------------------")
+  val While = new While(cond,ifThenElse)
   test.visit(While)
-
+  println(test.str)
   println("--------------------------------------------------")
 
   val refact = new Refact
